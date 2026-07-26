@@ -1,11 +1,11 @@
 {
   "status": "done",
-  "phase": "Phase 1 · Public Command Center",
-  "task": "Public Command Center เปิดใช้งานแล้ว",
-  "activity": "Dashboard ทำงานบน GitHub Pages ผ่าน HTTPS",
-  "next_step": "กด NEXT เพื่อเริ่มงาน AETERNUM ถัดไป",
+  "phase": "Paper-only milestone · Guardian Watch",
+  "task": "AETERNUM Workforce paper-only ผ่านครบ 6 Phase",
+  "activity": "Guardian Watch ตรวจ GitHub และคิวงานทุก 1 ชั่วโมง",
+  "next_step": "ไม่ต้องกด NEXT — ระบบจะแจ้งเมื่อมีงานใหม่",
   "updated_at": "2026-07-26 UTC",
-  "pr_url": "https://github.com/EliteBulls/aeternum-command-center/pulls",
-  "ci_url": "https://github.com/EliteBulls/aeternum-command-center/actions",
-  "founder_action": "next"
+  "pr_url": "https://github.com/EliteBulls/AETERNUM/pulls",
+  "ci_url": "https://github.com/EliteBulls/AETERNUM/actions/runs/30199599305",
+  "founder_action": "wait"
 }

@@ -1,11 +1,11 @@
 {
   "status": "approval",
-  "phase": "Phase 1 · Command Center",
-  "task": "Build iPhone Command Center Dashboard",
-  "activity": "Dashboard, Founder Suggestion และ CI ผ่าน",
-  "next_step": "Founder ตรวจ PR #44 และกด Ready for review",
-  "updated_at": "2026-07-19 UTC",
-  "pr_url": "https://github.com/EliteBulls/AETERNUM/pull/44",
-  "ci_url": "https://github.com/EliteBulls/AETERNUM/actions/runs/29689264838",
+  "phase": "Phase 1 · Public Command Center",
+  "task": "ตรวจ Public Command Center ก่อนเผยแพร่",
+  "activity": "คัดลอก Dashboard ไป Public Draft PR และ CI ผ่านแล้ว",
+  "next_step": "Founder อนุมัติการ merge และเปิด GitHub Pages",
+  "updated_at": "2026-07-26 UTC",
+  "pr_url": "https://github.com/EliteBulls/aeternum-command-center/pull/1",
+  "ci_url": "https://github.com/EliteBulls/aeternum-command-center/actions/runs/30196451542",
   "founder_action": "approve"
 }

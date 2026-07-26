@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#0b1020">
+  <title>AETERNUM Command Center</title>
+  <link rel="manifest" href="./manifest.webmanifest">
+  <style>
+    :root{color-scheme:dark;--bg:#070b14;--card:#111827;--text:#f8fafc;--muted:#94a3b8;--line:#263244;--accent:#60a5fa}
+    *{box-sizing:border-box} body{margin:0;background:linear-gradient(180deg,#111827,var(--bg));color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+    main{max-width:540px;margin:auto;padding:max(18px,env(safe-area-inset-top)) 16px max(28px,env(safe-area-inset-bottom))}
+    header{display:flex;align-items:center;justify-content:space-between;margin-bottom:18px}.brand{font-weight:800;letter-spacing:.08em}.updated{font-size:12px;color:var(--muted)}
+    .status{border:1px solid var(--line);border-radius:24px;padding:22px;background:rgba(17,24,39,.92);box-shadow:0 14px 45px #0008}
+    .badge{display:inline-flex;gap:9px;align-items:center;padding:8px 12px;border-radius:999px;font-weight:800;background:#3b2f08;color:#fde68a}
+    .badge.block{background:#450a0a;color:#fecaca}.badge.approval{background:#3b1764;color:#e9d5ff}.badge.done{background:#052e16;color:#bbf7d0}
+    h1{font-size:30px;line-height:1.1;margin:18px 0 8px}.phase{color:var(--muted);margin:0 0 18px}.grid{display:grid;gap:10px}
+    .row{padding:13px 0;border-top:1px solid var(--line)}.label{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.08em}.value{margin-top:5px;font-size:16px;font-weight:650}
+    .actions{display:grid;gap:12px;margin-top:18px}.btn{display:flex;align-items:center;justify-content:center;min-height:56px;border-radius:16px;text-decoration:none;font-weight:850;font-size:18px;border:1px solid var(--line);color:var(--text);background:#182235}
+    .btn.next{background:linear-gradient(135deg,#2563eb,#7c3aed);border:0;box-shadow:0 10px 30px #2563eb55}.split{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+    .legend{margin-top:20px;padding:15px;border-radius:16px;background:#0c1322;color:var(--muted);font-size:14px;line-height:1.8}
+    .suggestion{margin-top:16px;padding:18px;border:1px solid #334155;border-radius:20px;background:#0c1322}.suggestion .label{margin-bottom:8px}.suggestion .value{font-size:20px}
+    .founder-action{margin-top:14px;width:100%}.founder-action.wait{pointer-events:none;opacity:.75;background:#263244}.founder-action.approve{background:linear-gradient(135deg,#7c3aed,#c026d3);border:0}.founder-action.next{background:linear-gradient(135deg,#2563eb,#7c3aed);border:0}
+    .warning{margin-top:14px;color:#94a3b8;font-size:12px;text-align:center}
+  </style>
+</head>
+<body>
+<main>
+  <header><div class="brand">AETERNUM</div><div class="updated" id="updated">กำลังโหลด…</div></header>
+  <section class="status">
+    <div class="badge" id="badge"><span id="dot">🟡</span><span id="statusText">กำลังทำ</span></div>
+    <h1 id="task">Command Center Dashboard</h1>
+    <p class="phase" id="phase">Phase 1 · Safe cloud operations</p>
+    <div class="grid">
+      <div class="row"><div class="label">Codex กำลังทำ</div><div class="value" id="activity">เตรียม Dashboard สำหรับ iPhone</div></div>
+      <div class="row"><div class="label">ขั้นถัดไป</div><div class="value" id="nextStep">ตรวจ CI และรอ Founder อนุมัติ</div></div>
+    </div>
+  </section>
+  <div class="actions">
+    <a class="btn next" href="https://github.com/EliteBulls/AETERNUM/actions/workflows/aeternum-next.yml">▶ NEXT — ให้ Codex ทำต่อ</a>
+    <div class="split">
+      <a class="btn" id="prLink" href="https://github.com/EliteBulls/AETERNUM/pulls">ดู PR</a>
+      <a class="btn" id="ciLink" href="https://github.com/EliteBulls/AETERNUM/actions">ดู CI</a>
+    </div>
+    <a class="btn" href="https://github.com/EliteBulls/AETERNUM/issues/31">เปิด Command Center Issue</a>
+  </div>
+  <div class="suggestion">
+    <div class="label">FOUNDER SUGGESTION</div>
+    <div class="value" id="founderSuggestion">รอ Codex ทำงานให้เสร็จ</div>
+    <a class="btn founder-action wait" id="founderAction" href="https://github.com/EliteBulls/AETERNUM/issues/31">⏳ รอ Codex ทำงาน</a>
+  </div>
+  <div class="legend">🟡 กำลังทำ<br>🔴 ติด BLOCK — ต้องตรวจ<br>🟣 รอคุณอนุมัติ<br>🟢 งานเสร็จ</div>
+  <div class="warning">ไม่มีข้อมูลคนไข้ · ไม่มี secret · ไม่ auto-merge · ไม่ auto-deploy</div>
+</main>
+<script>
+const styles={working:["🟡","กำลังทำ",""],block:["🔴","ติด BLOCK","block"],approval:["🟣","รอคุณอนุมัติ","approval"],done:["🟢","งานเสร็จ","done"]};
+const founderActions={wait:["รอ Codex ทำงานให้เสร็จ","⏳ รอ Codex ทำงาน","wait"],next:["กด NEXT เพื่อเริ่มงานถัดไป","▶ กด NEXT","next"],approve:["ตรวจและกด APPROVE","✓ กด APPROVE","approve"]};
+function render(s){
+  const state=styles[s.status]||styles.block;
+  badge.className="badge "+state[2];dot.textContent=state[0];statusText.textContent=state[1];
+  task.textContent=s.task||"ไม่พบข้อมูลงาน";phase.textContent=s.phase||"AETERNUM";
+  activity.textContent=s.activity||"ไม่พบข้อมูล — กรุณาเปิด GitHub";
+  nextStep.textContent=s.next_step||"ตรวจสอบ Command Center Issue";
+  updated.textContent=s.updated_at?("อัปเดต "+s.updated_at):"สถานะไม่ทราบเวลา";
+  if(s.pr_url)prLink.href=s.pr_url;if(s.ci_url)ciLink.href=s.ci_url;
+  const action=founderActions[s.founder_action]||founderActions.wait;
+  founderSuggestion.textContent=action[0];founderAction.textContent=action[1];founderAction.className="btn founder-action "+action[2];
+  if(action[2]==="next")founderAction.href="https://github.com/EliteBulls/AETERNUM/actions/workflows/aeternum-next.yml";
+  else if(action[2]==="approve"&&s.pr_url)founderAction.href=s.pr_url;
+  else founderAction.href="https://github.com/EliteBulls/AETERNUM/issues/31";
+}
+fetch("./status.json",{cache:"no-store"}).then(r=>{if(!r.ok)throw Error();return r.json()}).then(render).catch(()=>render({status:"block",founder_action:"wait",task:"อ่านสถานะไม่ได้",activity:"เปิด GitHub เพื่อตรวจสอบ",next_step:"เปิด Command Center Issue"}));
+</script>
+</body></html>

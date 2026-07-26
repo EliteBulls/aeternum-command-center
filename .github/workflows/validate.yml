@@ -1,0 +1,26 @@
+name: Validate Command Center
+on:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate static dashboard
+        run: |
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+          html = Path("index.html").read_text(encoding="utf-8")
+          json.loads(Path("status.json").read_text(encoding="utf-8"))
+          json.loads(Path("manifest.webmanifest").read_text(encoding="utf-8"))
+          required = ('id="founderSuggestion"', 'id="founderAction"', 'styles[s.status]||styles.block')
+          assert all(token in html for token in required)
+          assert r"\n" not in html
+          denied = ("CURSOR_API_KEY", "secrets.", "patient_id", "contents: write")
+          assert all(token not in html for token in denied)
+          PY

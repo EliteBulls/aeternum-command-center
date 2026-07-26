@@ -1,0 +1,9 @@
+{
+  "name": "AETERNUM Command Center",
+  "short_name": "AETERNUM",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#070b14",
+  "theme_color": "#0b1020",
+  "description": "Founder mobile command center for AETERNUM"
+}

@@ -17,7 +17,7 @@
     h1{font-size:30px;line-height:1.1;margin:18px 0 8px}.phase{color:var(--muted);margin:0 0 18px}.grid{display:grid;gap:10px}
     .row{padding:13px 0;border-top:1px solid var(--line)}.label{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.08em}.value{margin-top:5px;font-size:16px;font-weight:650}
     .actions{display:grid;gap:12px;margin-top:18px}.btn{display:flex;align-items:center;justify-content:center;min-height:56px;border-radius:16px;text-decoration:none;font-weight:850;font-size:18px;border:1px solid var(--line);color:var(--text);background:#182235}
-    .btn.next{background:linear-gradient(135deg,#2563eb,#7c3aed);border:0;box-shadow:0 10px 30px #2563eb55}.split{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+    .btn.next{background:linear-gradient(135deg,#2563eb,#7c3aed);border:0;box-shadow:0 10px 30px #2563eb55}.btn.guardian-wait{pointer-events:none;opacity:.72;background:#263244}.split{display:grid;grid-template-columns:1fr 1fr;gap:12px}
     .legend{margin-top:20px;padding:15px;border-radius:16px;background:#0c1322;color:var(--muted);font-size:14px;line-height:1.8}
     .suggestion{margin-top:16px;padding:18px;border:1px solid #334155;border-radius:20px;background:#0c1322}.suggestion .label{margin-bottom:8px}.suggestion .value{font-size:20px}
     .founder-action{margin-top:14px;width:100%}.founder-action.wait{pointer-events:none;opacity:.75;background:#263244}.founder-action.approve{background:linear-gradient(135deg,#7c3aed,#c026d3);border:0}.founder-action.next{background:linear-gradient(135deg,#2563eb,#7c3aed);border:0}
@@ -37,7 +37,7 @@
     </div>
   </section>
   <div class="actions">
-    <a class="btn next" href="https://github.com/EliteBulls/AETERNUM/actions/workflows/aeternum-next.yml">▶ NEXT — ให้ Codex ทำต่อ</a>
+    <a class="btn guardian-wait" id="nextButton" href="#" aria-disabled="true" tabindex="-1">⏳ Guardian กำลังเฝ้าอยู่ — ไม่ต้องกด NEXT</a>
     <div class="split">
       <a class="btn" id="prLink" href="https://github.com/EliteBulls/AETERNUM/pulls">ดู PR</a>
       <a class="btn" id="ciLink" href="https://github.com/EliteBulls/AETERNUM/actions">ดู CI</a>
@@ -65,6 +65,11 @@ function render(s){
   if(s.pr_url)prLink.href=s.pr_url;if(s.ci_url)ciLink.href=s.ci_url;
   const action=founderActions[s.founder_action]||founderActions.wait;
   founderSuggestion.textContent=action[0];founderAction.textContent=action[1];founderAction.className="btn founder-action "+action[2];
+  const nextAllowed=action[2]==="next";
+  nextButton.textContent=nextAllowed?"▶ NEXT — ให้ Codex ทำต่อ":"⏳ Guardian กำลังเฝ้าอยู่ — ไม่ต้องกด NEXT";
+  nextButton.className="btn "+(nextAllowed?"next":"guardian-wait");
+  nextButton.href=nextAllowed?"https://github.com/EliteBulls/AETERNUM/actions/workflows/aeternum-next.yml":"#";
+  nextButton.setAttribute("aria-disabled",String(!nextAllowed));nextButton.tabIndex=nextAllowed?0:-1;
   if(action[2]==="next")founderAction.href="https://github.com/EliteBulls/AETERNUM/actions/workflows/aeternum-next.yml";
   else if(action[2]==="approve"&&s.pr_url)founderAction.href=s.pr_url;
   else founderAction.href="https://github.com/EliteBulls/AETERNUM/issues/31";

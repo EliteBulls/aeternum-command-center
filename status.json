@@ -1,11 +1,17 @@
 {
   "status": "done",
-  "phase": "Paper-only milestone · Guardian Watch",
-  "task": "AETERNUM Workforce paper-only ผ่านครบ 6 Phase",
-  "activity": "Guardian Watch ตรวจ GitHub และคิวงานทุก 1 ชั่วโมง",
-  "next_step": "ไม่ต้องกด NEXT — ระบบจะแจ้งเมื่อมีงานใหม่",
-  "updated_at": "2026-07-26 UTC",
-  "pr_url": "https://github.com/EliteBulls/AETERNUM/pulls",
-  "ci_url": "https://github.com/EliteBulls/AETERNUM/actions/runs/30199599305",
-  "founder_action": "wait"
+  "phase": "Guardian Command Center · Public safe snapshot",
+  "task": "Guardian Live Monitor พร้อมใช้งาน",
+  "activity": "หน้าเว็บอ่านเฉพาะสถานะสาธารณะที่ไม่มีข้อมูลลับ",
+  "next_step": "Guardian กำลังเตรียมระบบอัปเดตสถานะอัตโนมัติ",
+  "updated_at": "30 ก.ค. 2569",
+  "pr_url": "https://github.com/EliteBulls/aeternum-command-center/pulls",
+  "ci_url": "https://github.com/EliteBulls/aeternum-command-center/actions",
+  "founder_action": "wait",
+  "live_steps": [
+    "🟢 Auto-refresh ทุก 60 วินาที",
+    "🟢 ไม่อ่าน Private Issue จากหน้าเว็บ Public",
+    "🟢 ไม่มี token, secret หรือข้อมูลคนไข้",
+    "🟡 ระบบเผยแพร่สถานะอัตโนมัติเป็นงานถัดไป"
+  ]
 }

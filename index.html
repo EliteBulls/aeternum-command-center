@@ -9,13 +9,14 @@
   <style>
     :root{color-scheme:dark;--bg:#070b14;--card:#111827;--text:#f8fafc;--muted:#94a3b8;--line:#263244;--accent:#60a5fa}
     *{box-sizing:border-box} body{margin:0;background:linear-gradient(180deg,#111827,var(--bg));color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
-    main{max-width:540px;margin:auto;padding:max(18px,env(safe-area-inset-top)) 16px max(28px,env(safe-area-inset-bottom))}
-    header{display:flex;align-items:center;justify-content:space-between;margin-bottom:18px}.brand{font-weight:800;letter-spacing:.08em}.updated{font-size:12px;color:var(--muted)}
-    .status{border:1px solid var(--line);border-radius:24px;padding:22px;background:rgba(17,24,39,.92);box-shadow:0 14px 45px #0008}
+    main{max-width:720px;margin:auto;padding:max(18px,env(safe-area-inset-top)) 16px max(28px,env(safe-area-inset-bottom))}
+    header{display:flex;align-items:center;justify-content:space-between;margin-bottom:18px}.brand{font-weight:800;letter-spacing:.08em}.updated{font-size:12px;color:var(--muted);text-align:right}
+    .auto{display:inline-block;margin-bottom:4px;color:#86efac;font-weight:800}.status{border:1px solid var(--line);border-radius:24px;padding:22px;background:rgba(17,24,39,.92);box-shadow:0 14px 45px #0008}
     .badge{display:inline-flex;gap:9px;align-items:center;padding:8px 12px;border-radius:999px;font-weight:800;background:#3b2f08;color:#fde68a}
     .badge.block{background:#450a0a;color:#fecaca}.badge.approval{background:#3b1764;color:#e9d5ff}.badge.done{background:#052e16;color:#bbf7d0}
     h1{font-size:30px;line-height:1.1;margin:18px 0 8px}.phase{color:var(--muted);margin:0 0 18px}.grid{display:grid;gap:10px}
     .row{padding:13px 0;border-top:1px solid var(--line)}.label{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.08em}.value{margin-top:5px;font-size:16px;font-weight:650}
+    .live{margin-top:16px}.live h2{margin:5px 0 12px;font-size:21px}.live ul{margin:0;padding-left:22px;line-height:1.65}.live li{margin:6px 0}.live-note{margin-top:12px;color:var(--muted);font-size:12px}
     .actions{display:grid;gap:12px;margin-top:18px}.btn{display:flex;align-items:center;justify-content:center;min-height:56px;border-radius:16px;text-decoration:none;font-weight:850;font-size:18px;border:1px solid var(--line);color:var(--text);background:#182235}
     .btn.next{background:linear-gradient(135deg,#2563eb,#7c3aed);border:0;box-shadow:0 10px 30px #2563eb55}.btn.guardian-wait{pointer-events:none;opacity:.72;background:#263244}.split{display:grid;grid-template-columns:1fr 1fr;gap:12px}
     .legend{margin-top:20px;padding:15px;border-radius:16px;background:#0c1322;color:var(--muted);font-size:14px;line-height:1.8}
@@ -26,15 +27,24 @@
 </head>
 <body>
 <main>
-  <header><div class="brand">AETERNUM</div><div class="updated" id="updated">กำลังโหลด…</div></header>
+  <header>
+    <div class="brand">AETERNUM</div>
+    <div class="updated"><span class="auto">● AUTO‑REFRESH 60s</span><br><span id="updated">กำลังโหลด…</span></div>
+  </header>
   <section class="status">
     <div class="badge" id="badge"><span id="dot">🟡</span><span id="statusText">กำลังทำ</span></div>
-    <h1 id="task">Command Center Dashboard</h1>
-    <p class="phase" id="phase">Phase 1 · Safe cloud operations</p>
+    <h1 id="task">Guardian Live Work Monitor</h1>
+    <p class="phase" id="phase">Paper-only · Safe cloud operations</p>
     <div class="grid">
-      <div class="row"><div class="label">Codex กำลังทำ</div><div class="value" id="activity">เตรียม Dashboard สำหรับ iPhone</div></div>
-      <div class="row"><div class="label">ขั้นถัดไป</div><div class="value" id="nextStep">ตรวจ CI และรอ Founder อนุมัติ</div></div>
+      <div class="row"><div class="label">AI กำลังทำ</div><div class="value" id="activity">กำลังอ่านสถานะจาก GitHub</div></div>
+      <div class="row"><div class="label">ขั้นถัดไป</div><div class="value" id="nextStep">รอข้อมูลล่าสุด</div></div>
     </div>
+  </section>
+  <section class="status live">
+    <div class="label">GUARDIAN LIVE WORK MONITOR</div>
+    <h2>งานและขั้นตอนปัจจุบัน</h2>
+    <ul id="liveList"><li>กำลังเชื่อมต่อ GitHub…</li></ul>
+    <div class="live-note" id="liveNote">ระบบไม่แสดงรหัสผ่าน secrets หรือข้อมูลคนไข้</div>
   </section>
   <div class="actions">
     <a class="btn guardian-wait" id="nextButton" href="#" aria-disabled="true" tabindex="-1">⏳ Guardian กำลังเฝ้าอยู่ — ไม่ต้องกด NEXT</a>
@@ -42,7 +52,7 @@
       <a class="btn" id="prLink" href="https://github.com/EliteBulls/AETERNUM/pulls">ดู PR</a>
       <a class="btn" id="ciLink" href="https://github.com/EliteBulls/AETERNUM/actions">ดู CI</a>
     </div>
-    <a class="btn" href="https://github.com/EliteBulls/AETERNUM/issues/31">เปิด Command Center Issue</a>
+    <a class="btn" href="https://github.com/EliteBulls/AETERNUM/issues/31">เปิดรายละเอียด Issue #31</a>
   </div>
   <div class="suggestion">
     <div class="label">FOUNDER SUGGESTION</div>
@@ -53,8 +63,13 @@
   <div class="warning">ไม่มีข้อมูลคนไข้ · ไม่มี secret · ไม่ auto-merge · ไม่ auto-deploy</div>
 </main>
 <script>
+const ISSUE_API="https://api.github.com/repos/EliteBulls/AETERNUM/issues/31";
+const ISSUE_URL="https://github.com/EliteBulls/AETERNUM/issues/31";
+const ACTIONS_URL="https://github.com/EliteBulls/AETERNUM/actions";
+const REFRESH_MS=60000;
 const styles={working:["🟡","กำลังทำ",""],block:["🔴","ติด BLOCK","block"],approval:["🟣","รอคุณอนุมัติ","approval"],done:["🟢","งานเสร็จ","done"]};
-const founderActions={wait:["รอ Codex ทำงานให้เสร็จ","⏳ รอ Codex ทำงาน","wait"],next:["กด NEXT เพื่อเริ่มงานถัดไป","▶ กด NEXT","next"],approve:["ตรวจและกด APPROVE","✓ กด APPROVE","approve"]};
+const founderActions={wait:["รอ AI ทำงานให้เสร็จ","⏳ รอ AI ทำงาน","wait"],next:["กด NEXT เพื่อเริ่มงานถัดไป","▶ กด NEXT","next"],approve:["ตรวจและกด APPROVE","✓ กด APPROVE","approve"]};
+
 function render(s){
   const state=styles[s.status]||styles.block;
   badge.className="badge "+state[2];dot.textContent=state[0];statusText.textContent=state[1];
@@ -72,8 +87,89 @@ function render(s){
   nextButton.setAttribute("aria-disabled",String(!nextAllowed));nextButton.tabIndex=nextAllowed?0:-1;
   if(action[2]==="next")founderAction.href="https://github.com/EliteBulls/AETERNUM/actions/workflows/aeternum-next.yml";
   else if(action[2]==="approve"&&s.pr_url)founderAction.href=s.pr_url;
-  else founderAction.href="https://github.com/EliteBulls/AETERNUM/issues/31";
+  else founderAction.href=ISSUE_URL;
 }
-fetch("./status.json",{cache:"no-store"}).then(r=>{if(!r.ok)throw Error();return r.json()}).then(render).catch(()=>render({status:"block",founder_action:"wait",task:"อ่านสถานะไม่ได้",activity:"เปิด GitHub เพื่อตรวจสอบ",next_step:"เปิด Command Center Issue"}));
+
+function sectionLines(body,heading){
+  const lines=String(body||"").split(/\r?\n/);
+  const start=lines.findIndex(line=>line.trim().startsWith(heading));
+  if(start<0)return[];
+  const found=[];
+  for(let i=start+1;i<lines.length;i++){
+    const line=lines[i].trim();
+    if(line.startsWith("## "))break;
+    if(line.startsWith("- "))found.push(line.slice(2));
+  }
+  return found;
+}
+
+function plainMarkdown(value){
+  return String(value||"")
+    .replace(/\[([^\]]+)\]\((https:\/\/github\.com\/[^)]+)\)/g,"$1")
+    .replace(/[`*_]/g,"")
+    .trim();
+}
+
+function firstGithubUrl(lines){
+  for(const line of lines){
+    const match=String(line).match(/\((https:\/\/github\.com\/[^)]+)\)/);
+    if(match)return match[1];
+  }
+  return "";
+}
+
+function showLiveLines(lines){
+  liveList.replaceChildren();
+  const safeLines=lines.length?lines:["🟢 ไม่มี GitHub Actions ที่กำลังทำงาน"];
+  for(const line of safeLines.slice(0,8)){
+    const li=document.createElement("li");
+    li.textContent=plainMarkdown(line);
+    liveList.appendChild(li);
+  }
+}
+
+function renderIssue(issue){
+  const body=String(issue.body||"");
+  const generated=body.split("## งานถัดไปเพียงงานเดียว")[0];
+  const live=sectionLines(body,"## 🖥️ Guardian Live Work Monitor");
+  const next=sectionLines(body,"## งานถัดไปเพียงงานเดียว");
+  const active=live.some(line=>line.includes("🟡"));
+  const approval=generated.includes("🟣");
+  const blocked=generated.includes("🔴");
+  const status=active?"working":approval?"approval":blocked?"block":"done";
+  const action=approval?"approve":(active||blocked)?"wait":"next";
+  const runUrl=firstGithubUrl(live)||ACTIONS_URL;
+  const prLines=sectionLines(body,"## สถานะอัตโนมัติ");
+  const prUrl=firstGithubUrl(prLines)||"https://github.com/EliteBulls/AETERNUM/pulls";
+  showLiveLines(live);
+  render({
+    status,
+    founder_action:action,
+    task:"Guardian Live Work Monitor",
+    phase:"Paper-only · Auto-refresh ทุก 60 วินาที",
+    activity:plainMarkdown(live[0]||"ไม่มีงานที่กำลังรัน"),
+    next_step:plainMarkdown(next[0]||"ตรวจ Command Center Issue"),
+    updated_at:new Date(issue.updated_at).toLocaleString("th-TH"),
+    pr_url:prUrl,
+    ci_url:runUrl
+  });
+}
+
+async function loadIssue(){
+  liveNote.textContent="กำลังอัปเดตจาก GitHub…";
+  try{
+    const response=await fetch(ISSUE_API,{cache:"no-store",headers:{"Accept":"application/vnd.github+json"}});
+    if(!response.ok)throw new Error("GitHub "+response.status);
+    renderIssue(await response.json());
+    liveNote.textContent="อัปเดตอัตโนมัติทุก 60 วินาที · ไม่แสดง secrets หรือข้อมูลคนไข้";
+  }catch(error){
+    liveNote.textContent="อ่าน GitHub ไม่สำเร็จ ระบบจะลองใหม่อัตโนมัติ";
+    render({status:"block",founder_action:"wait",task:"อ่านสถานะไม่ได้",activity:"ระบบจะลองใหม่ภายใน 60 วินาที",next_step:"ยังไม่ต้องกดอะไร",ci_url:ACTIONS_URL});
+  }
+}
+
+loadIssue();
+setInterval(loadIssue,REFRESH_MS);
 </script>
-</body></html>
+</body>
+</html>

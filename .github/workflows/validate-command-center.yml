@@ -1,0 +1,80 @@
+name: Validate Command Center
+
+on:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: validate-command-center-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  validate:
+    name: HTML and JavaScript safety
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+
+    steps:
+      - name: Checkout proposed change
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+
+      - name: Validate page
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          import re
+          import subprocess
+          import tempfile
+          from html.parser import HTMLParser
+          from pathlib import Path
+
+          page = Path("index.html")
+          if not page.is_file():
+              raise SystemExit("index.html is missing")
+
+          html = page.read_text(encoding="utf-8")
+
+          class StrictHTMLParser(HTMLParser):
+              def error(self, message):
+                  raise RuntimeError(message)
+
+          StrictHTMLParser().feed(html)
+
+          required = {
+              "public Issue #31 source": "repos/EliteBulls/AETERNUM/issues/31",
+              "60-second refresh": "60000",
+              "automatic refresh timer": "setInterval",
+              "safe text rendering": "textContent",
+          }
+          missing = [label for label, marker in required.items() if marker not in html]
+          if missing:
+              raise SystemExit("Missing required guards: " + ", ".join(missing))
+
+          forbidden = re.compile(
+              r"(ghp_[A-Za-z0-9]{20,}|github_pat_[A-Za-z0-9_]{20,}|"
+              r"(?:password|api[_-]?key|access[_-]?token)\\s*[:=]\\s*['\"][^'\"]+)",
+              re.IGNORECASE,
+          )
+          if forbidden.search(html):
+              raise SystemExit("Possible credential or secret detected")
+
+          scripts = re.findall(r"<script(?:\\s[^>]*)?>(.*?)</script>", html, re.I | re.S)
+          if not scripts:
+              raise SystemExit("No inline JavaScript found")
+
+          with tempfile.TemporaryDirectory() as tmp:
+              for index, script in enumerate(scripts, start=1):
+                  path = Path(tmp) / f"inline-{index}.js"
+                  path.write_text(script, encoding="utf-8")
+                  subprocess.run(["node", "--check", str(path)], check=True)
+
+          print("PASS: HTML, JavaScript, auto-refresh, safe rendering, and secret scan")
+          PY
+
+  # Validation only: no merge and no deploy.

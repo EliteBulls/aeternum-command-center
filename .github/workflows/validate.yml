@@ -52,7 +52,7 @@ jobs:
           required = {
               "Founder suggestion": 'id="founderSuggestion"',
               "Founder action": 'id="founderAction"',
-              "public safe status source": 'STATUS_URL="./status.json"',
+              "public safe status source": 'STATUS_URL="https://raw.githubusercontent.com/EliteBulls/aeternum-command-center/live-status/status.json"',
               "60-second refresh": "60000",
               "automatic refresh timer": "setInterval",
               "safe text rendering": "textContent",

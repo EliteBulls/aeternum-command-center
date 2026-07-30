@@ -63,7 +63,7 @@
   <div class="warning">ไม่มีข้อมูลคนไข้ · ไม่มี secret · ไม่ auto-merge · ไม่ auto-deploy</div>
 </main>
 <script>
-const ISSUE_API="https://api.github.com/repos/EliteBulls/AETERNUM/issues/31";
+const STATUS_URL="./status.json";
 const ISSUE_URL="https://github.com/EliteBulls/AETERNUM/issues/31";
 const ACTIONS_URL="https://github.com/EliteBulls/AETERNUM/actions";
 const REFRESH_MS=60000;
@@ -155,21 +155,24 @@ function renderIssue(issue){
   });
 }
 
-async function loadIssue(){
-  liveNote.textContent="กำลังอัปเดตจาก GitHub…";
+async function loadStatus(){
+  liveNote.textContent="กำลังอัปเดตสถานะสาธารณะที่ปลอดภัย…";
   try{
-    const response=await fetch(ISSUE_API,{cache:"no-store",headers:{"Accept":"application/vnd.github+json"}});
-    if(!response.ok)throw new Error("GitHub "+response.status);
-    renderIssue(await response.json());
-    liveNote.textContent="อัปเดตอัตโนมัติทุก 60 วินาที · ไม่แสดง secrets หรือข้อมูลคนไข้";
+    const response=await fetch(STATUS_URL+"?t="+Date.now(),{cache:"no-store"});
+    if(!response.ok)throw new Error("Status "+response.status);
+    const status=await response.json();
+    const live=Array.isArray(status.live_steps)?status.live_steps:[status.activity||"ไม่มีงานที่กำลังรัน"];
+    showLiveLines(live);
+    render(status);
+    liveNote.textContent="อัปเดตอัตโนมัติทุก 60 วินาที · อ่านเฉพาะ status.json สาธารณะ · ไม่แสดง secrets หรือข้อมูลคนไข้";
   }catch(error){
-    liveNote.textContent="อ่าน GitHub ไม่สำเร็จ ระบบจะลองใหม่อัตโนมัติ";
-    render({status:"block",founder_action:"wait",task:"อ่านสถานะไม่ได้",activity:"ระบบจะลองใหม่ภายใน 60 วินาที",next_step:"ยังไม่ต้องกดอะไร",ci_url:ACTIONS_URL});
+    liveNote.textContent="อ่าน status.json ไม่สำเร็จ ระบบจะลองใหม่อัตโนมัติ";
+    render({status:"block",founder_action:"wait",task:"อ่านสถานะสาธารณะไม่ได้",activity:"ระบบจะลองใหม่ภายใน 60 วินาที",next_step:"ยังไม่ต้องกดอะไร",ci_url:ACTIONS_URL});
   }
 }
 
-loadIssue();
-setInterval(loadIssue,REFRESH_MS);
+loadStatus();
+setInterval(loadStatus,REFRESH_MS);
 </script>
 </body>
 </html>

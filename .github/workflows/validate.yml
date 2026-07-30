@@ -52,7 +52,7 @@ jobs:
           required = {
               "Founder suggestion": 'id="founderSuggestion"',
               "Founder action": 'id="founderAction"',
-              "public Issue #31 source": "repos/EliteBulls/AETERNUM/issues/31",
+              "public safe status source": 'STATUS_URL="./status.json"',
               "60-second refresh": "60000",
               "automatic refresh timer": "setInterval",
               "safe text rendering": "textContent",

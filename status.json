@@ -1,17 +1,15 @@
 {
-  "status": "done",
-  "phase": "Guardian Command Center · Public safe snapshot",
-  "task": "Guardian Live Monitor พร้อมใช้งาน",
-  "activity": "หน้าเว็บอ่านเฉพาะสถานะสาธารณะที่ไม่มีข้อมูลลับ",
-  "next_step": "Guardian กำลังเตรียมระบบอัปเดตสถานะอัตโนมัติ",
-  "updated_at": "30 ก.ค. 2569",
-  "pr_url": "https://github.com/EliteBulls/aeternum-command-center/pulls",
-  "ci_url": "https://github.com/EliteBulls/aeternum-command-center/actions",
+  "status": "working",
+  "phase": "Paper-only · Safe public snapshot",
+  "task": "รายละเอียดถูกซ่อนเพื่อความปลอดภัย",
+  "activity": "GitHub Actions กำลังทำงาน",
+  "next_step": "รอให้ระบบทำงานเสร็จ",
+  "updated_at": "2026-07-31T12:14:58Z",
+  "pr_url": "https://github.com/EliteBulls/AETERNUM/pull/60",
+  "ci_url": "https://github.com/EliteBulls/AETERNUM/actions/runs/30629905708",
   "founder_action": "wait",
   "live_steps": [
-    "🟢 Auto-refresh ทุก 60 วินาที",
-    "🟢 ไม่อ่าน Private Issue จากหน้าเว็บ Public",
-    "🟢 ไม่มี token, secret หรือข้อมูลคนไข้",
-    "🟡 ระบบเผยแพร่สถานะอัตโนมัติเป็นงานถัดไป"
+    "รายละเอียดถูกซ่อนเพื่อความปลอดภัย: queued",
+    "Regression Tests: in_progress"
   ]
 }

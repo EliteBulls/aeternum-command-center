@@ -4,12 +4,12 @@
   "task": "Draft PR #60",
   "activity": "feat(router): add repo-wide cost-aware intelligence router shadow",
   "next_step": "รอ Guardian ตรวจ CI และเตรียมขั้นถัดไป",
-  "updated_at": "2026-07-31T12:15:37Z",
+  "updated_at": "2026-07-31T12:25:17Z",
   "pr_url": "https://github.com/EliteBulls/AETERNUM/pull/60",
-  "ci_url": "https://github.com/EliteBulls/AETERNUM/actions/runs/30629905708",
+  "ci_url": "https://github.com/EliteBulls/AETERNUM/actions/runs/30630511530",
   "founder_action": "wait",
   "live_steps": [
     "รายละเอียดถูกซ่อนเพื่อความปลอดภัย: completed",
-    "รายละเอียดถูกซ่อนเพื่อความปลอดภัย: completed"
+    "CI Approval Notifier: completed"
   ]
 }

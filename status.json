@@ -4,13 +4,12 @@
   "task": "Guardian Live Monitor พร้อมใช้งาน",
   "activity": "ไม่มีงาน GitHub ที่กำลังรัน",
   "next_step": "กด NEXT เมื่อต้องการเริ่มงานถัดไป",
-  "updated_at": "2026-07-31T13:44:17Z",
+  "updated_at": "2026-07-31T13:44:39Z",
   "pr_url": "https://github.com/EliteBulls/AETERNUM/pulls",
   "ci_url": "https://github.com/EliteBulls/AETERNUM/actions/runs/30635632750",
   "founder_action": "next",
   "live_steps": [
     "รายละเอียดถูกซ่อนเพื่อความปลอดภัย: completed",
-    "รายละเอียดถูกซ่อนเพื่อความปลอดภัย: completed",
-    "Task Completion Notifier: completed"
+    "รายละเอียดถูกซ่อนเพื่อความปลอดภัย: completed"
   ]
 }

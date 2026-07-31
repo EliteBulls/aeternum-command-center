@@ -1,15 +1,16 @@
 {
   "status": "working",
   "phase": "Paper-only · Safe public snapshot",
-  "task": "Draft PR #53",
-  "activity": "feat(founder-os): persist notification acknowledgement state",
-  "next_step": "รอ Guardian ตรวจ CI และเตรียมขั้นถัดไป",
-  "updated_at": "2026-07-31T13:27:22Z",
-  "pr_url": "https://github.com/EliteBulls/AETERNUM/pull/53",
-  "ci_url": "https://github.com/EliteBulls/AETERNUM/actions/runs/30634479291",
+  "task": "รายละเอียดถูกซ่อนเพื่อความปลอดภัย",
+  "activity": "GitHub Actions กำลังทำงาน",
+  "next_step": "รอให้ระบบทำงานเสร็จ",
+  "updated_at": "2026-07-31T13:43:51Z",
+  "pr_url": "https://github.com/EliteBulls/AETERNUM/pulls",
+  "ci_url": "https://github.com/EliteBulls/AETERNUM/actions/runs/30635621666",
   "founder_action": "wait",
   "live_steps": [
-    "รายละเอียดถูกซ่อนเพื่อความปลอดภัย: completed",
-    "CI Approval Notifier: completed"
+    "รายละเอียดถูกซ่อนเพื่อความปลอดภัย: queued",
+    "Task Completion Notifier: in_progress",
+    "Regression Tests: in_progress"
   ]
 }

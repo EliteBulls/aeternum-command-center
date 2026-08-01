@@ -1,15 +1,15 @@
 {
-  "status": "block",
+  "status": "working",
   "phase": "Paper-only · Safe public snapshot",
-  "task": "GitHub Actions Billing BLOCK",
-  "activity": "GitHub Actions ไม่เริ่มงาน เนื่องจาก account payment หรือ spending limit; ระบบ auto-update หยุดทำงาน",
-  "next_step": "Founder ตรวจ Billing & plans ภายหลัง แล้วระบบจะกลับมาอัปเดตอัตโนมัติ",
-  "updated_at": "2026-07-31T15:47:25Z",
+  "task": "รายละเอียดถูกซ่อนเพื่อความปลอดภัย",
+  "activity": "GitHub Actions กำลังทำงาน",
+  "next_step": "รอให้ระบบทำงานเสร็จ",
+  "updated_at": "2026-08-01T03:58:25Z",
   "pr_url": "https://github.com/EliteBulls/AETERNUM/pulls",
-  "ci_url": "https://github.com/EliteBulls/AETERNUM/actions/runs/30637791779",
+  "ci_url": "https://github.com/EliteBulls/AETERNUM/actions/runs/30683007678",
   "founder_action": "wait",
   "live_steps": [
-    "Guardian Secretary: billing-blocked ก่อนเริ่ม steps",
-    "Public Status Publisher: billing-blocked ก่อนเริ่ม steps"
+    "รายละเอียดถูกซ่อนเพื่อความปลอดภัย: in_progress",
+    "Cloud Daily Paper Health Run: in_progress"
   ]
 }

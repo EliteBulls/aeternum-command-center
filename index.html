@@ -62,26 +62,14 @@
   <div class="legend">🟡 กำลังทำ<br>🔴 ติด BLOCK — ต้องตรวจ<br>🟣 รอคุณอนุมัติ<br>🟢 งานเสร็จ</div>
   <div class="warning">ไม่มีข้อมูลคนไข้ · ไม่มี secret · ไม่ auto-merge · ไม่ auto-deploy</div>
 </main>
+<script src="./js/stale-guard.js"></script>
 <script>
 const STATUS_URL="https://raw.githubusercontent.com/EliteBulls/aeternum-command-center/live-status/status.json";
 const ISSUE_URL="https://github.com/EliteBulls/AETERNUM/issues/31";
 const ACTIONS_URL="https://github.com/EliteBulls/AETERNUM/actions";
 const REFRESH_MS=60000;
-const STALE_THRESHOLD_MS=10*60*1000;
-const FUTURE_GRACE_MS=5*60*1000;
 const styles={working:["🟡","กำลังทำ",""],block:["🔴","ติด BLOCK","block"],approval:["🟣","รอคุณอนุมัติ","approval"],done:["🟢","งานเสร็จ","done"]};
 const founderActions={wait:["รอ AI ทำงานให้เสร็จ","⏳ รอ AI ทำงาน","wait"],next:["กด NEXT เพื่อเริ่มงานถัดไป","▶ กด NEXT","next"],approve:["ตรวจและกด APPROVE","✓ กด APPROVE","approve"]};
-
-function checkStaleness(updatedAt,nowMs){
-  if(!updatedAt||typeof updatedAt!=="string"||!updatedAt.trim())
-    return{stale:true,reason:"missing"};
-  const ts=Date.parse(updatedAt);
-  if(!isFinite(ts))return{stale:true,reason:"invalid"};
-  const diff=nowMs-ts;
-  if(diff<-FUTURE_GRACE_MS)return{stale:true,reason:"future"};
-  if(diff>=STALE_THRESHOLD_MS)return{stale:true,reason:"stale"};
-  return{stale:false,reason:"fresh"};
-}
 
 function render(s){
   const state=styles[s.status]||styles.block;

@@ -1,32 +1,20 @@
 'use strict';
+// Import the real implementation — no duplication; threshold changes here automatically.
+const { checkStaleness, STALE_THRESHOLD_MS, FUTURE_GRACE_MS } = require('../js/stale-guard.js');
+
 const assert = require('assert');
 
-// ── Guard logic (mirrors index.html) ──────────────────────────────────────────
-const STALE_THRESHOLD_MS = 10 * 60 * 1000;
-const FUTURE_GRACE_MS    =  5 * 60 * 1000;
-
-function checkStaleness(updatedAt, nowMs) {
-  if (!updatedAt || typeof updatedAt !== 'string' || !updatedAt.trim())
-    return { stale: true, reason: 'missing' };
-  const ts = Date.parse(updatedAt);
-  if (!isFinite(ts)) return { stale: true, reason: 'invalid' };
-  const diff = nowMs - ts;
-  if (diff < -FUTURE_GRACE_MS)   return { stale: true,  reason: 'future' };
-  if (diff >= STALE_THRESHOLD_MS) return { stale: true,  reason: 'stale'  };
-  return { stale: false, reason: 'fresh' };
-}
-
-// ── Minimal render-logic extracted from index.html ───────────────────────────
+// ── Render-logic mirror (founder-action → NEXT-allowed) ──────────────────────
 const FA = {
-  wait:    ['รอ AI ทำงานให้เสร็จ', '⏳ รอ AI ทำงาน',       'wait'],
-  next:    ['กด NEXT เพื่อเริ่มงานถัดไป', '▶ กด NEXT',    'next'],
-  approve: ['ตรวจและกด APPROVE',  '✓ กด APPROVE',          'approve'],
+  wait:    ['รอ AI ทำงานให้เสร็จ', '⏳ รอ AI ทำงาน',    'wait'],
+  next:    ['กด NEXT เพื่อเริ่มงานถัดไป', '▶ กด NEXT', 'next'],
+  approve: ['ตรวจและกด APPROVE',  '✓ กด APPROVE',       'approve'],
 };
 function nextAllowed(founderAction) {
   return (FA[founderAction] || FA.wait)[2] === 'next';
 }
 
-// ── Test harness ──────────────────────────────────────────────────────────────
+// ── Harness ───────────────────────────────────────────────────────────────────
 const NOW = new Date('2026-08-02T06:00:00.000Z').getTime();
 let pass = 0, fail = 0;
 
@@ -35,42 +23,52 @@ function test(name, fn) {
   catch (e) { console.error('  FAIL', name + ':', e.message); fail++; }
 }
 
-console.log('\nStale Status Guard Tests');
-console.log('========================');
+console.log('\nStale Status Guard Tests  (threshold =', STALE_THRESHOLD_MS / 3600000, 'h)');
+console.log('='.repeat(60));
 
 // ── 1. Fresh timestamp ────────────────────────────────────────────────────────
-test('fresh: 1 min ago', () => {
-  const r = checkStaleness(new Date(NOW - 1 * 60 * 1000).toISOString(), NOW);
-  assert.strictEqual(r.stale,  false);
-  assert.strictEqual(r.reason, 'fresh');
-});
-
 test('fresh: exactly now', () => {
   const r = checkStaleness(new Date(NOW).toISOString(), NOW);
   assert.strictEqual(r.stale, false);
+  assert.strictEqual(r.reason, 'fresh');
 });
 
-test('fresh: 9 min 59 s ago (just inside threshold)', () => {
-  const r = checkStaleness(new Date(NOW - (STALE_THRESHOLD_MS - 1000)).toISOString(), NOW);
+test('fresh: 1 min ago', () => {
+  const r = checkStaleness(new Date(NOW - 60_000).toISOString(), NOW);
+  assert.strictEqual(r.stale, false);
+});
+
+test('fresh: 1 hour ago', () => {
+  const r = checkStaleness(new Date(NOW - 60 * 60_000).toISOString(), NOW);
+  assert.strictEqual(r.stale, false);
+});
+
+test('fresh: 12 hours ago', () => {
+  const r = checkStaleness(new Date(NOW - 12 * 60 * 60_000).toISOString(), NOW);
+  assert.strictEqual(r.stale, false);
+});
+
+test('fresh: 1 ms before threshold (just under 26 h)', () => {
+  const r = checkStaleness(new Date(NOW - (STALE_THRESHOLD_MS - 1)).toISOString(), NOW);
   assert.strictEqual(r.stale,  false);
   assert.strictEqual(r.reason, 'fresh');
 });
 
 // ── 2. Stale timestamp ────────────────────────────────────────────────────────
-test('stale: exactly 10 min ago (at threshold)', () => {
+test('stale: exactly 26 hours ago (at threshold boundary)', () => {
   const r = checkStaleness(new Date(NOW - STALE_THRESHOLD_MS).toISOString(), NOW);
   assert.strictEqual(r.stale,  true);
   assert.strictEqual(r.reason, 'stale');
 });
 
-test('stale: 11 min ago', () => {
-  const r = checkStaleness(new Date(NOW - 11 * 60 * 1000).toISOString(), NOW);
+test('stale: 27 hours ago (beyond threshold)', () => {
+  const r = checkStaleness(new Date(NOW - 27 * 60 * 60_000).toISOString(), NOW);
   assert.strictEqual(r.stale,  true);
   assert.strictEqual(r.reason, 'stale');
 });
 
-test('stale: 1 hour ago', () => {
-  const r = checkStaleness(new Date(NOW - 60 * 60 * 1000).toISOString(), NOW);
+test('stale: 48 hours ago', () => {
+  const r = checkStaleness(new Date(NOW - 48 * 60 * 60_000).toISOString(), NOW);
   assert.strictEqual(r.stale,  true);
   assert.strictEqual(r.reason, 'stale');
 });
@@ -113,7 +111,7 @@ test('invalid: garbage string', () => {
   assert.strictEqual(r.reason, 'invalid');
 });
 
-test('invalid: number as string "1234567890"', () => {
+test('invalid: bare number string', () => {
   const r = checkStaleness('1234567890', NOW);
   assert.strictEqual(r.stale,  true);
   assert.strictEqual(r.reason, 'invalid');
@@ -121,58 +119,57 @@ test('invalid: number as string "1234567890"', () => {
 
 // ── 5. Future timestamp ───────────────────────────────────────────────────────
 test('future: 1 hour ahead', () => {
-  const r = checkStaleness(new Date(NOW + 60 * 60 * 1000).toISOString(), NOW);
+  const r = checkStaleness(new Date(NOW + 60 * 60_000).toISOString(), NOW);
   assert.strictEqual(r.stale,  true);
   assert.strictEqual(r.reason, 'future');
 });
 
-test('future: 6 min ahead (beyond grace)', () => {
-  const r = checkStaleness(new Date(NOW + 6 * 60 * 1000).toISOString(), NOW);
+test('future: 6 min ahead (beyond 5 min grace)', () => {
+  const r = checkStaleness(new Date(NOW + 6 * 60_000).toISOString(), NOW);
   assert.strictEqual(r.stale,  true);
   assert.strictEqual(r.reason, 'future');
 });
 
-test('future: exactly at grace boundary (5 min) — still fresh', () => {
+test('future: exactly at grace boundary (5 min) — treated as fresh', () => {
   const r = checkStaleness(new Date(NOW + FUTURE_GRACE_MS).toISOString(), NOW);
   assert.strictEqual(r.stale,  false);
   assert.strictEqual(r.reason, 'fresh');
 });
 
 test('future: 3 min ahead (within grace)', () => {
-  const r = checkStaleness(new Date(NOW + 3 * 60 * 1000).toISOString(), NOW);
+  const r = checkStaleness(new Date(NOW + 3 * 60_000).toISOString(), NOW);
   assert.strictEqual(r.stale,  false);
   assert.strictEqual(r.reason, 'fresh');
 });
 
 // ── 6. NEXT disabled when data unsafe ────────────────────────────────────────
-test('NEXT disabled: stale founder_action=wait', () => {
+test('NEXT disabled: founder_action=wait', () => {
   assert.strictEqual(nextAllowed('wait'), false);
 });
 
-test('NEXT disabled: missing founder_action (defaults to wait)', () => {
+test('NEXT disabled: undefined founder_action defaults to wait', () => {
   assert.strictEqual(nextAllowed(undefined), false);
 });
 
-test('NEXT disabled: block status forces wait', () => {
-  const ts = new Date(NOW - 11 * 60 * 1000).toISOString();
-  const staleness = checkStaleness(ts, NOW);
-  assert.strictEqual(staleness.stale, true);
+test('NEXT disabled: stale data forces founder_action=wait', () => {
+  const ts = new Date(NOW - STALE_THRESHOLD_MS).toISOString();
+  const { stale } = checkStaleness(ts, NOW);
+  assert.strictEqual(stale, true);
   assert.strictEqual(nextAllowed('wait'), false, 'NEXT must be locked when stale');
 });
 
-// ── 7. Existing validation: normal render is unblocked when fresh ─────────────
+// ── 7. Existing validation: normal render unblocked when fresh ────────────────
 test('existing: fresh ISO timestamp is not blocked', () => {
-  const ts = new Date(NOW - 3 * 60 * 1000).toISOString();
-  const r = checkStaleness(ts, NOW);
-  assert.strictEqual(r.stale, false);
+  const ts = new Date(NOW - 3 * 60_000).toISOString();
+  assert.strictEqual(checkStaleness(ts, NOW).stale, false);
 });
 
-test('existing: founder_action=next is allowed when fresh', () => {
+test('existing: founder_action=next allowed when fresh', () => {
   assert.strictEqual(nextAllowed('next'), true);
 });
 
-test('existing: founder_action=approve allowed when fresh', () => {
-  assert.strictEqual(nextAllowed('approve'), false, 'approve does not unlock NEXT');
+test('existing: founder_action=approve does not unlock NEXT', () => {
+  assert.strictEqual(nextAllowed('approve'), false);
 });
 
 // ── Summary ───────────────────────────────────────────────────────────────────

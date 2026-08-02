@@ -1,14 +1,15 @@
 {
   "status": "working",
   "phase": "Paper-only · Safe public snapshot",
-  "task": "Draft PR #64",
-  "activity": "feat(founder-os): notification status and local acknowledgement CLI foundation",
-  "next_step": "รอ Guardian ตรวจ CI และเตรียมขั้นถัดไป",
-  "updated_at": "2026-08-02T13:34:17Z",
+  "task": "รายละเอียดถูกซ่อนเพื่อความปลอดภัย",
+  "activity": "GitHub Actions กำลังทำงาน",
+  "next_step": "รอให้ระบบทำงานเสร็จ",
+  "updated_at": "2026-08-02T13:39:53Z",
   "pr_url": "https://github.com/EliteBulls/AETERNUM/pull/64",
-  "ci_url": "https://github.com/EliteBulls/AETERNUM/actions/runs/30750188888",
+  "ci_url": "https://github.com/EliteBulls/AETERNUM/actions/runs/30750403806",
   "founder_action": "wait",
   "live_steps": [
-    "รายละเอียดถูกซ่อนเพื่อความปลอดภัย: completed"
+    "รายละเอียดถูกซ่อนเพื่อความปลอดภัย: queued",
+    "CI Approval Notifier: in_progress"
   ]
 }

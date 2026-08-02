@@ -67,8 +67,21 @@ const STATUS_URL="https://raw.githubusercontent.com/EliteBulls/aeternum-command-
 const ISSUE_URL="https://github.com/EliteBulls/AETERNUM/issues/31";
 const ACTIONS_URL="https://github.com/EliteBulls/AETERNUM/actions";
 const REFRESH_MS=60000;
+const STALE_THRESHOLD_MS=10*60*1000;
+const FUTURE_GRACE_MS=5*60*1000;
 const styles={working:["🟡","กำลังทำ",""],block:["🔴","ติด BLOCK","block"],approval:["🟣","รอคุณอนุมัติ","approval"],done:["🟢","งานเสร็จ","done"]};
 const founderActions={wait:["รอ AI ทำงานให้เสร็จ","⏳ รอ AI ทำงาน","wait"],next:["กด NEXT เพื่อเริ่มงานถัดไป","▶ กด NEXT","next"],approve:["ตรวจและกด APPROVE","✓ กด APPROVE","approve"]};
+
+function checkStaleness(updatedAt,nowMs){
+  if(!updatedAt||typeof updatedAt!=="string"||!updatedAt.trim())
+    return{stale:true,reason:"missing"};
+  const ts=Date.parse(updatedAt);
+  if(!isFinite(ts))return{stale:true,reason:"invalid"};
+  const diff=nowMs-ts;
+  if(diff<-FUTURE_GRACE_MS)return{stale:true,reason:"future"};
+  if(diff>=STALE_THRESHOLD_MS)return{stale:true,reason:"stale"};
+  return{stale:false,reason:"fresh"};
+}
 
 function render(s){
   const state=styles[s.status]||styles.block;
@@ -161,6 +174,13 @@ async function loadStatus(){
     const response=await fetch(STATUS_URL+"?t="+Date.now(),{cache:"no-store"});
     if(!response.ok)throw new Error("Status "+response.status);
     const status=await response.json();
+    const freshness=checkStaleness(status.updated_at,Date.now());
+    if(freshness.stale){
+      showLiveLines(["🔴 ข้อมูลสถานะไม่อัปเดต"]);
+      render({status:"block",founder_action:"wait",task:"🔴 ข้อมูลสถานะไม่อัปเดต",activity:"ข้อมูลสถานะล้าสมัยหรือไม่ถูกต้อง — ระบบจะตรวจสอบใหม่โดยอัตโนมัติ",next_step:"ระบบจะตรวจสถานะใหม่อัตโนมัติภายใน 60 วินาที",updated_at:status.updated_at||"ไม่มีข้อมูล",ci_url:ACTIONS_URL});
+      liveNote.textContent="⚠ ข้อมูล status.json ไม่อัปเดต — ระบบจะตรวจใหม่อัตโนมัติภายใน 60 วินาที";
+      return;
+    }
     const live=Array.isArray(status.live_steps)?status.live_steps:[status.activity||"ไม่มีงานที่กำลังรัน"];
     showLiveLines(live);
     render(status);

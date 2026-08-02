@@ -86,4 +86,7 @@ jobs:
           print("PASS: dashboard data, HTML, JavaScript, auto-refresh, safe rendering, and secret scan")
           PY
 
+      - name: Run stale-guard unit tests
+        run: node tests/stale-guard.test.js
+
   # Validation only: no merge and no deploy.

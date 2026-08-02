@@ -1,14 +1,15 @@
 {
   "status": "working",
   "phase": "Paper-only · Safe public snapshot",
-  "task": "Regression Tests",
-  "activity": "GitHub Actions กำลังทำงาน",
-  "next_step": "รอให้ระบบทำงานเสร็จ",
-  "updated_at": "2026-08-02T07:28:18Z",
+  "task": "Draft PR #61",
+  "activity": "fix(guardian): scope publisher credential to publish step",
+  "next_step": "รอ Guardian ตรวจ CI และเตรียมขั้นถัดไป",
+  "updated_at": "2026-08-02T07:28:37Z",
   "pr_url": "https://github.com/EliteBulls/AETERNUM/pull/61",
-  "ci_url": "https://github.com/EliteBulls/AETERNUM/actions/runs/30737858268",
+  "ci_url": "https://github.com/EliteBulls/AETERNUM/actions/runs/30737864011",
   "founder_action": "wait",
   "live_steps": [
-    "Regression Tests: in_progress"
+    "รายละเอียดถูกซ่อนเพื่อความปลอดภัย: completed",
+    "รายละเอียดถูกซ่อนเพื่อความปลอดภัย: completed"
   ]
 }

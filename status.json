@@ -4,12 +4,11 @@
   "task": "Draft PR #64",
   "activity": "feat(founder-os): notification status and local acknowledgement CLI foundation",
   "next_step": "รอ Guardian ตรวจ CI และเตรียมขั้นถัดไป",
-  "updated_at": "2026-08-02T14:38:53Z",
+  "updated_at": "2026-08-02T15:31:46Z",
   "pr_url": "https://github.com/EliteBulls/AETERNUM/pull/64",
-  "ci_url": "https://github.com/EliteBulls/AETERNUM/actions/runs/30752551000",
+  "ci_url": "https://github.com/EliteBulls/AETERNUM/actions/runs/30754538418",
   "founder_action": "wait",
   "live_steps": [
-    "รายละเอียดถูกซ่อนเพื่อความปลอดภัย: completed",
-    "CI Approval Notifier: completed"
+    "รายละเอียดถูกซ่อนเพื่อความปลอดภัย: completed"
   ]
 }

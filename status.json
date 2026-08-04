@@ -4,11 +4,12 @@
   "task": "Draft PR #65",
   "activity": "Surface scheduled workflow evidence",
   "next_step": "รอ Guardian ตรวจ CI และเตรียมขั้นถัดไป",
-  "updated_at": "2026-08-04T10:32:59Z",
+  "updated_at": "2026-08-04T10:45:35Z",
   "pr_url": "https://github.com/EliteBulls/AETERNUM/pull/65",
-  "ci_url": "https://github.com/EliteBulls/AETERNUM/actions/runs/30901068701",
+  "ci_url": "https://github.com/EliteBulls/AETERNUM/actions/runs/30901607068",
   "founder_action": "wait",
   "live_steps": [
-    "รายละเอียดถูกซ่อนเพื่อความปลอดภัย: completed"
+    "รายละเอียดถูกซ่อนเพื่อความปลอดภัย: completed",
+    "CI Approval Notifier: completed"
   ]
 }

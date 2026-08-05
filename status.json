@@ -4,13 +4,11 @@
   "task": "รายละเอียดถูกซ่อนเพื่อความปลอดภัย",
   "activity": "GitHub Actions กำลังทำงาน",
   "next_step": "รอให้ระบบทำงานเสร็จ",
-  "updated_at": "2026-08-05T03:41:35Z",
+  "updated_at": "2026-08-05T03:41:56Z",
   "pr_url": "https://github.com/EliteBulls/AETERNUM/pulls",
-  "ci_url": "https://github.com/EliteBulls/AETERNUM/actions/runs/30972974906",
+  "ci_url": "https://github.com/EliteBulls/AETERNUM/actions/runs/30972991538",
   "founder_action": "wait",
   "live_steps": [
-    "รายละเอียดถูกซ่อนเพื่อความปลอดภัย: pending",
-    "รายละเอียดถูกซ่อนเพื่อความปลอดภัย: in_progress",
-    "Cloud Daily Paper Health Run: in_progress"
+    "รายละเอียดถูกซ่อนเพื่อความปลอดภัย: queued"
   ]
 }

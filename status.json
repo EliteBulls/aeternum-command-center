@@ -1,14 +1,14 @@
 {
   "status": "working",
   "phase": "Paper-only · Safe public snapshot",
-  "task": "Draft PR #68",
-  "activity": "feat(workforce): adopt bounded Loop Engineering",
-  "next_step": "รอ Guardian ตรวจ CI และเตรียมขั้นถัดไป",
-  "updated_at": "2026-08-06T09:00:04Z",
+  "task": "Regression Tests",
+  "activity": "GitHub Actions กำลังทำงาน",
+  "next_step": "รอให้ระบบทำงานเสร็จ",
+  "updated_at": "2026-08-06T09:01:57Z",
   "pr_url": "https://github.com/EliteBulls/AETERNUM/pull/68",
-  "ci_url": "https://github.com/EliteBulls/AETERNUM/actions/runs/31087170872",
+  "ci_url": "https://github.com/EliteBulls/AETERNUM/actions/runs/31087338423",
   "founder_action": "wait",
   "live_steps": [
-    "รายละเอียดถูกซ่อนเพื่อความปลอดภัย: completed"
+    "Regression Tests: queued"
   ]
 }

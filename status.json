@@ -4,7 +4,7 @@
   "task": "Draft PR #67",
   "activity": "feat(knowledge): add AETERNUM Knowledge Core foundation",
   "next_step": "รอ Guardian ตรวจ CI และเตรียมขั้นถัดไป",
-  "updated_at": "2026-08-06T04:31:54Z",
+  "updated_at": "2026-08-06T04:32:41Z",
   "pr_url": "https://github.com/EliteBulls/AETERNUM/pull/67",
   "ci_url": "https://github.com/EliteBulls/AETERNUM/actions/runs/31071491169",
   "founder_action": "wait",

@@ -1,15 +1,16 @@
 {
-  "status": "done",
+  "status": "working",
   "phase": "Paper-only · Safe public snapshot",
-  "task": "Guardian Live Monitor พร้อมใช้งาน",
-  "activity": "ไม่มีงาน GitHub ที่กำลังรัน",
-  "next_step": "กด NEXT เมื่อต้องการเริ่มงานถัดไป",
-  "updated_at": "2026-08-06T13:47:47Z",
-  "pr_url": "https://github.com/EliteBulls/AETERNUM/pulls",
-  "ci_url": "https://github.com/EliteBulls/AETERNUM/actions/runs/31107190356",
-  "founder_action": "next",
+  "task": "รายละเอียดถูกซ่อนเพื่อความปลอดภัย",
+  "activity": "GitHub Actions กำลังทำงาน",
+  "next_step": "รอให้ระบบทำงานเสร็จ",
+  "updated_at": "2026-08-06T14:15:51Z",
+  "pr_url": "https://github.com/EliteBulls/AETERNUM/pull/69",
+  "ci_url": "https://github.com/EliteBulls/AETERNUM/actions/runs/31109939906",
+  "founder_action": "wait",
   "live_steps": [
-    "CI Approval Notifier: completed",
-    "รายละเอียดถูกซ่อนเพื่อความปลอดภัย: completed"
+    "รายละเอียดถูกซ่อนเพื่อความปลอดภัย: pending",
+    "รายละเอียดถูกซ่อนเพื่อความปลอดภัย: in_progress",
+    "Regression Tests: in_progress"
   ]
 }

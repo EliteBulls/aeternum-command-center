@@ -4,9 +4,9 @@
   "task": "Draft PR #75",
   "activity": "docs: record PR #74 detector learning",
   "next_step": "รอ Guardian ตรวจ CI และเตรียมขั้นถัดไป",
-  "updated_at": "2026-08-09T14:54:46Z",
+  "updated_at": "2026-08-09T15:04:02Z",
   "pr_url": "https://github.com/EliteBulls/AETERNUM/pull/75",
-  "ci_url": "https://github.com/EliteBulls/AETERNUM/actions/runs/31319609438",
+  "ci_url": "https://github.com/EliteBulls/AETERNUM/actions/runs/31319872778",
   "founder_action": "wait",
   "live_steps": [
     "รายละเอียดถูกซ่อนเพื่อความปลอดภัย: completed",

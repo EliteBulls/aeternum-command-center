@@ -4,11 +4,12 @@
   "task": "Draft PR #74",
   "activity": "รายละเอียดถูกซ่อนเพื่อความปลอดภัย",
   "next_step": "รอ Guardian ตรวจ CI และเตรียมขั้นถัดไป",
-  "updated_at": "2026-08-09T13:04:16Z",
+  "updated_at": "2026-08-09T13:11:14Z",
   "pr_url": "https://github.com/EliteBulls/AETERNUM/pull/74",
-  "ci_url": "https://github.com/EliteBulls/AETERNUM/actions/runs/31314838515",
+  "ci_url": "https://github.com/EliteBulls/AETERNUM/actions/runs/31315145497",
   "founder_action": "wait",
   "live_steps": [
-    "รายละเอียดถูกซ่อนเพื่อความปลอดภัย: completed"
+    "รายละเอียดถูกซ่อนเพื่อความปลอดภัย: completed",
+    "CI Approval Notifier: completed"
   ]
 }

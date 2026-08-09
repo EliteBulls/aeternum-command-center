@@ -1,15 +1,16 @@
 {
   "status": "working",
   "phase": "Paper-only · Safe public snapshot",
-  "task": "Draft PR #70",
-  "activity": "feat: Parallel Control Plane foundation (shadow-only)",
-  "next_step": "รอ Guardian ตรวจ CI และเตรียมขั้นถัดไป",
-  "updated_at": "2026-08-09T08:43:12Z",
+  "task": "รายละเอียดถูกซ่อนเพื่อความปลอดภัย",
+  "activity": "GitHub Actions กำลังทำงาน",
+  "next_step": "รอให้ระบบทำงานเสร็จ",
+  "updated_at": "2026-08-09T09:08:42Z",
   "pr_url": "https://github.com/EliteBulls/AETERNUM/pull/70",
-  "ci_url": "https://github.com/EliteBulls/AETERNUM/actions/runs/31304163444",
+  "ci_url": "https://github.com/EliteBulls/AETERNUM/actions/runs/31305197640",
   "founder_action": "wait",
   "live_steps": [
-    "รายละเอียดถูกซ่อนเพื่อความปลอดภัย: completed",
-    "CI Approval Notifier: completed"
+    "รายละเอียดถูกซ่อนเพื่อความปลอดภัย: pending",
+    "รายละเอียดถูกซ่อนเพื่อความปลอดภัย: in_progress",
+    "Regression Tests: in_progress"
   ]
 }

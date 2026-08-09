@@ -4,11 +4,12 @@
   "task": "Draft PR #70",
   "activity": "feat: Parallel Control Plane foundation (shadow-only)",
   "next_step": "รอ Guardian ตรวจ CI และเตรียมขั้นถัดไป",
-  "updated_at": "2026-08-09T07:56:31Z",
+  "updated_at": "2026-08-09T08:08:24Z",
   "pr_url": "https://github.com/EliteBulls/AETERNUM/pull/70",
-  "ci_url": "https://github.com/EliteBulls/AETERNUM/actions/runs/31302302013",
+  "ci_url": "https://github.com/EliteBulls/AETERNUM/actions/runs/31302782952",
   "founder_action": "wait",
   "live_steps": [
-    "รายละเอียดถูกซ่อนเพื่อความปลอดภัย: completed"
+    "รายละเอียดถูกซ่อนเพื่อความปลอดภัย: completed",
+    "CI Approval Notifier: completed"
   ]
 }

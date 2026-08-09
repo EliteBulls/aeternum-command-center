@@ -1,15 +1,15 @@
 {
   "status": "working",
   "phase": "Paper-only · Safe public snapshot",
-  "task": "Draft PR #71",
-  "activity": "feat: add fail-closed workforce payload safety",
-  "next_step": "รอ Guardian ตรวจ CI และเตรียมขั้นถัดไป",
-  "updated_at": "2026-08-09T10:20:39Z",
+  "task": "รายละเอียดถูกซ่อนเพื่อความปลอดภัย",
+  "activity": "GitHub Actions กำลังทำงาน",
+  "next_step": "รอให้ระบบทำงานเสร็จ",
+  "updated_at": "2026-08-09T10:36:16Z",
   "pr_url": "https://github.com/EliteBulls/AETERNUM/pull/71",
-  "ci_url": "https://github.com/EliteBulls/AETERNUM/actions/runs/31308079680",
+  "ci_url": "https://github.com/EliteBulls/AETERNUM/actions/runs/31308726629",
   "founder_action": "wait",
   "live_steps": [
-    "รายละเอียดถูกซ่อนเพื่อความปลอดภัย: completed",
-    "CI Approval Notifier: completed"
+    "รายละเอียดถูกซ่อนเพื่อความปลอดภัย: queued",
+    "Regression Tests: in_progress"
   ]
 }

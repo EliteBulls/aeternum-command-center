@@ -1,14 +1,14 @@
 {
   "status": "working",
   "phase": "Paper-only · Safe public snapshot",
-  "task": "Regression Tests",
-  "activity": "GitHub Actions กำลังทำงาน",
-  "next_step": "รอให้ระบบทำงานเสร็จ",
-  "updated_at": "2026-08-09T11:47:47Z",
+  "task": "Draft PR #73",
+  "activity": "feat(router): add GPT-5.6 Codex/Work credit-aware allowance guard",
+  "next_step": "รอ Guardian ตรวจ CI และเตรียมขั้นถัดไป",
+  "updated_at": "2026-08-09T11:48:09Z",
   "pr_url": "https://github.com/EliteBulls/AETERNUM/pull/73",
-  "ci_url": "https://github.com/EliteBulls/AETERNUM/actions/runs/31311662285",
+  "ci_url": "https://github.com/EliteBulls/AETERNUM/actions/runs/31311681078",
   "founder_action": "wait",
   "live_steps": [
-    "Regression Tests: queued"
+    "รายละเอียดถูกซ่อนเพื่อความปลอดภัย: completed"
   ]
 }

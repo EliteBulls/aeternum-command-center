@@ -4,11 +4,12 @@
   "task": "Draft PR #73",
   "activity": "feat(router): add GPT-5.6 Codex/Work credit-aware allowance guard",
   "next_step": "รอ Guardian ตรวจ CI และเตรียมขั้นถัดไป",
-  "updated_at": "2026-08-09T11:12:08Z",
+  "updated_at": "2026-08-09T11:19:35Z",
   "pr_url": "https://github.com/EliteBulls/AETERNUM/pull/73",
-  "ci_url": "https://github.com/EliteBulls/AETERNUM/actions/runs/31310183058",
+  "ci_url": "https://github.com/EliteBulls/AETERNUM/actions/runs/31310489529",
   "founder_action": "wait",
   "live_steps": [
-    "รายละเอียดถูกซ่อนเพื่อความปลอดภัย: completed"
+    "รายละเอียดถูกซ่อนเพื่อความปลอดภัย: completed",
+    "CI Approval Notifier: completed"
   ]
 }

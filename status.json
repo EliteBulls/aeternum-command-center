@@ -4,9 +4,9 @@
   "task": "Draft PR #71",
   "activity": "feat: add fail-closed workforce payload safety",
   "next_step": "รอ Guardian ตรวจ CI และเตรียมขั้นถัดไป",
-  "updated_at": "2026-08-09T12:09:52Z",
+  "updated_at": "2026-08-09T12:14:44Z",
   "pr_url": "https://github.com/EliteBulls/AETERNUM/pull/71",
-  "ci_url": "https://github.com/EliteBulls/AETERNUM/actions/runs/31312574029",
+  "ci_url": "https://github.com/EliteBulls/AETERNUM/actions/runs/31312784586",
   "founder_action": "wait",
   "live_steps": [
     "รายละเอียดถูกซ่อนเพื่อความปลอดภัย: completed",

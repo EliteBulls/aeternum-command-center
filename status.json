@@ -1,14 +1,15 @@
 {
   "status": "working",
   "phase": "Paper-only · Safe public snapshot",
-  "task": "Draft PR #76",
-  "activity": "feat: add category-only phone detector",
-  "next_step": "รอ Guardian ตรวจ CI และเตรียมขั้นถัดไป",
-  "updated_at": "2026-08-10T13:43:32Z",
+  "task": "รายละเอียดถูกซ่อนเพื่อความปลอดภัย",
+  "activity": "GitHub Actions กำลังทำงาน",
+  "next_step": "รอให้ระบบทำงานเสร็จ",
+  "updated_at": "2026-08-10T13:48:46Z",
   "pr_url": "https://github.com/EliteBulls/AETERNUM/pull/76",
-  "ci_url": "https://github.com/EliteBulls/AETERNUM/actions/runs/31394276049",
+  "ci_url": "https://github.com/EliteBulls/AETERNUM/actions/runs/31394777532",
   "founder_action": "wait",
   "live_steps": [
-    "รายละเอียดถูกซ่อนเพื่อความปลอดภัย: completed"
+    "รายละเอียดถูกซ่อนเพื่อความปลอดภัย: in_progress",
+    "CI Approval Notifier: in_progress"
   ]
 }

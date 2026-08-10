@@ -1,14 +1,15 @@
 {
-  "status": "working",
+  "status": "block",
   "phase": "Paper-only · Safe public snapshot",
-  "task": "Draft PR #76",
-  "activity": "feat: add category-only phone detector",
-  "next_step": "รอ Guardian ตรวจ CI และเตรียมขั้นถัดไป",
-  "updated_at": "2026-08-10T12:06:19Z",
-  "pr_url": "https://github.com/EliteBulls/AETERNUM/pull/76",
-  "ci_url": "https://github.com/EliteBulls/AETERNUM/actions/runs/31386424744",
+  "task": "CI Approval Notifier",
+  "activity": "CI มีรายการที่ต้องตรวจ",
+  "next_step": "เปิด CI Monitor เพื่อตรวจสาเหตุ",
+  "updated_at": "2026-08-10T13:19:34Z",
+  "pr_url": "https://github.com/EliteBulls/AETERNUM/pull/87",
+  "ci_url": "https://github.com/EliteBulls/AETERNUM/actions/runs/31390820691",
   "founder_action": "wait",
   "live_steps": [
-    "รายละเอียดถูกซ่อนเพื่อความปลอดภัย: completed"
+    "รายละเอียดถูกซ่อนเพื่อความปลอดภัย: completed",
+    "CI Approval Notifier: completed"
   ]
 }

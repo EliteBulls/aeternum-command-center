@@ -1,14 +1,15 @@
 {
   "status": "working",
   "phase": "Paper-only · Safe public snapshot",
-  "task": "Draft PR #96",
-  "activity": "knowledge: record PR #73 credit guard learning",
-  "next_step": "รอ Guardian ตรวจ CI และเตรียมขั้นถัดไป",
-  "updated_at": "2026-08-10T15:10:44Z",
+  "task": "รายละเอียดถูกซ่อนเพื่อความปลอดภัย",
+  "activity": "GitHub Actions กำลังทำงาน",
+  "next_step": "รอให้ระบบทำงานเสร็จ",
+  "updated_at": "2026-08-10T15:18:39Z",
   "pr_url": "https://github.com/EliteBulls/AETERNUM/pull/96",
-  "ci_url": "https://github.com/EliteBulls/AETERNUM/actions/runs/31402100512",
+  "ci_url": "https://github.com/EliteBulls/AETERNUM/actions/runs/31402872639",
   "founder_action": "wait",
   "live_steps": [
-    "รายละเอียดถูกซ่อนเพื่อความปลอดภัย: completed"
+    "รายละเอียดถูกซ่อนเพื่อความปลอดภัย: in_progress",
+    "CI Approval Notifier: queued"
   ]
 }

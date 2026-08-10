@@ -4,7 +4,7 @@
   "task": "Draft PR #91",
   "activity": "docs(knowledge): record PR #76 post-merge learning",
   "next_step": "รอ Guardian ตรวจ CI และเตรียมขั้นถัดไป",
-  "updated_at": "2026-08-10T14:02:52Z",
+  "updated_at": "2026-08-10T14:03:24Z",
   "pr_url": "https://github.com/EliteBulls/AETERNUM/pull/91",
   "ci_url": "https://github.com/EliteBulls/AETERNUM/actions/runs/31395996940",
   "founder_action": "wait",

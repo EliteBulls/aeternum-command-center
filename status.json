@@ -1,14 +1,15 @@
 {
   "status": "working",
   "phase": "Paper-only · Safe public snapshot",
-  "task": "Draft PR #94",
-  "activity": "docs(knowledge): record PR #76 post-merge learning",
-  "next_step": "รอ Guardian ตรวจ CI และเตรียมขั้นถัดไป",
-  "updated_at": "2026-08-10T14:18:55Z",
+  "task": "รายละเอียดถูกซ่อนเพื่อความปลอดภัย",
+  "activity": "GitHub Actions กำลังทำงาน",
+  "next_step": "รอให้ระบบทำงานเสร็จ",
+  "updated_at": "2026-08-10T14:25:20Z",
   "pr_url": "https://github.com/EliteBulls/AETERNUM/pull/94",
-  "ci_url": "https://github.com/EliteBulls/AETERNUM/actions/runs/31397397976",
+  "ci_url": "https://github.com/EliteBulls/AETERNUM/actions/runs/31398046001",
   "founder_action": "wait",
   "live_steps": [
-    "รายละเอียดถูกซ่อนเพื่อความปลอดภัย: completed"
+    "รายละเอียดถูกซ่อนเพื่อความปลอดภัย: queued",
+    "CI Approval Notifier: in_progress"
   ]
 }

@@ -1,14 +1,14 @@
 {
   "status": "working",
   "phase": "Paper-only · Safe public snapshot",
-  "task": "Draft PR #77",
-  "activity": "feat: Lisa Chief of Staff foundation (shadow-only)",
-  "next_step": "รอ Guardian ตรวจ CI และเตรียมขั้นถัดไป",
-  "updated_at": "2026-08-10T07:58:04Z",
+  "task": "รายละเอียดถูกซ่อนเพื่อความปลอดภัย",
+  "activity": "GitHub Actions กำลังทำงาน",
+  "next_step": "รอให้ระบบทำงานเสร็จ",
+  "updated_at": "2026-08-10T08:02:00Z",
   "pr_url": "https://github.com/EliteBulls/AETERNUM/pull/77",
-  "ci_url": "https://github.com/EliteBulls/AETERNUM/actions/runs/31367800510",
+  "ci_url": "https://github.com/EliteBulls/AETERNUM/actions/runs/31368282173",
   "founder_action": "wait",
   "live_steps": [
-    "รายละเอียดถูกซ่อนเพื่อความปลอดภัย: completed"
+    "รายละเอียดถูกซ่อนเพื่อความปลอดภัย: in_progress"
   ]
 }

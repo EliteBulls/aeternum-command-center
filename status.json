@@ -4,11 +4,12 @@
   "task": "Draft PR #77",
   "activity": "feat: Lisa Chief of Staff foundation (shadow-only)",
   "next_step": "รอ Guardian ตรวจ CI และเตรียมขั้นถัดไป",
-  "updated_at": "2026-08-10T11:54:49Z",
+  "updated_at": "2026-08-10T11:56:38Z",
   "pr_url": "https://github.com/EliteBulls/AETERNUM/pull/77",
-  "ci_url": "https://github.com/EliteBulls/AETERNUM/actions/runs/31385568769",
+  "ci_url": "https://github.com/EliteBulls/AETERNUM/actions/runs/31385714960",
   "founder_action": "wait",
   "live_steps": [
-    "รายละเอียดถูกซ่อนเพื่อความปลอดภัย: completed"
+    "รายละเอียดถูกซ่อนเพื่อความปลอดภัย: completed",
+    "CI Approval Notifier: completed"
   ]
 }

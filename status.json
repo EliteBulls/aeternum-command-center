@@ -4,12 +4,11 @@
   "task": "รายละเอียดถูกซ่อนเพื่อความปลอดภัย",
   "activity": "GitHub Actions กำลังทำงาน",
   "next_step": "รอให้ระบบทำงานเสร็จ",
-  "updated_at": "2026-08-10T16:08:42Z",
+  "updated_at": "2026-08-10T16:09:09Z",
   "pr_url": "https://github.com/EliteBulls/AETERNUM/pull/71",
-  "ci_url": "https://github.com/EliteBulls/AETERNUM/actions/runs/31407367812",
+  "ci_url": "https://github.com/EliteBulls/AETERNUM/actions/runs/31407387997",
   "founder_action": "wait",
   "live_steps": [
-    "รายละเอียดถูกซ่อนเพื่อความปลอดภัย: in_progress",
-    "Regression Tests: in_progress"
+    "รายละเอียดถูกซ่อนเพื่อความปลอดภัย: in_progress"
   ]
 }

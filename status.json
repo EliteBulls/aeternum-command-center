@@ -4,9 +4,9 @@
   "task": "Draft PR #76",
   "activity": "feat: add category-only phone detector",
   "next_step": "รอ Guardian ตรวจ CI และเตรียมขั้นถัดไป",
-  "updated_at": "2026-08-10T02:39:55Z",
+  "updated_at": "2026-08-10T03:19:26Z",
   "pr_url": "https://github.com/EliteBulls/AETERNUM/pull/76",
-  "ci_url": "https://github.com/EliteBulls/AETERNUM/actions/runs/31350384978",
+  "ci_url": "https://github.com/EliteBulls/AETERNUM/actions/runs/31352261867",
   "founder_action": "wait",
   "live_steps": [
     "รายละเอียดถูกซ่อนเพื่อความปลอดภัย: completed"

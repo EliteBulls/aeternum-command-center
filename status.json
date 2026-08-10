@@ -1,12 +1,12 @@
 {
   "status": "working",
   "phase": "Paper-only · Safe public snapshot",
-  "task": "Draft PR #77",
-  "activity": "feat: Lisa Chief of Staff foundation (shadow-only)",
+  "task": "Draft PR #82",
+  "activity": "fix: harden AIMC skill router mixed-risk routing (Issue #79)",
   "next_step": "รอ Guardian ตรวจ CI และเตรียมขั้นถัดไป",
-  "updated_at": "2026-08-10T10:08:58Z",
-  "pr_url": "https://github.com/EliteBulls/AETERNUM/pull/77",
-  "ci_url": "https://github.com/EliteBulls/AETERNUM/actions/runs/31377819094",
+  "updated_at": "2026-08-10T10:13:50Z",
+  "pr_url": "https://github.com/EliteBulls/AETERNUM/pull/82",
+  "ci_url": "https://github.com/EliteBulls/AETERNUM/actions/runs/31378190761",
   "founder_action": "wait",
   "live_steps": [
     "รายละเอียดถูกซ่อนเพื่อความปลอดภัย: completed"

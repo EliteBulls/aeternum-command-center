@@ -4,11 +4,12 @@
   "task": "Draft PR #110",
   "activity": "knowledge: record PR #70 and #105 post-merge learning",
   "next_step": "รอ Guardian ตรวจ CI และเตรียมขั้นถัดไป",
-  "updated_at": "2026-08-11T20:18:16Z",
+  "updated_at": "2026-08-11T20:28:43Z",
   "pr_url": "https://github.com/EliteBulls/AETERNUM/pull/110",
-  "ci_url": "https://github.com/EliteBulls/AETERNUM/actions/runs/31532181985",
+  "ci_url": "https://github.com/EliteBulls/AETERNUM/actions/runs/31533096821",
   "founder_action": "wait",
   "live_steps": [
-    "รายละเอียดถูกซ่อนเพื่อความปลอดภัย: completed"
+    "รายละเอียดถูกซ่อนเพื่อความปลอดภัย: completed",
+    "CI Approval Notifier: completed"
   ]
 }

@@ -4,9 +4,9 @@
   "task": "Draft PR #99",
   "activity": "feat(workforce): add category-only sensitive-key classifier",
   "next_step": "รอ Guardian ตรวจ CI และเตรียมขั้นถัดไป",
-  "updated_at": "2026-08-11T10:15:34Z",
+  "updated_at": "2026-08-11T10:17:19Z",
   "pr_url": "https://github.com/EliteBulls/AETERNUM/pull/99",
-  "ci_url": "https://github.com/EliteBulls/AETERNUM/actions/runs/31481372554",
+  "ci_url": "https://github.com/EliteBulls/AETERNUM/actions/runs/31481503336",
   "founder_action": "wait",
   "live_steps": [
     "รายละเอียดถูกซ่อนเพื่อความปลอดภัย: completed",

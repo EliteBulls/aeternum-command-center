@@ -1,12 +1,12 @@
 {
   "status": "working",
   "phase": "Paper-only · Safe public snapshot",
-  "task": "Draft PR #99",
-  "activity": "feat(workforce): add category-only sensitive-key classifier",
+  "task": "Draft PR #101",
+  "activity": "feat(exec-team): add Founder Daily Briefing V1",
   "next_step": "รอ Guardian ตรวจ CI และเตรียมขั้นถัดไป",
-  "updated_at": "2026-08-11T09:13:11Z",
-  "pr_url": "https://github.com/EliteBulls/AETERNUM/pull/99",
-  "ci_url": "https://github.com/EliteBulls/AETERNUM/actions/runs/31476688964",
+  "updated_at": "2026-08-11T09:21:04Z",
+  "pr_url": "https://github.com/EliteBulls/AETERNUM/pull/101",
+  "ci_url": "https://github.com/EliteBulls/AETERNUM/actions/runs/31476924958",
   "founder_action": "wait",
   "live_steps": [
     "รายละเอียดถูกซ่อนเพื่อความปลอดภัย: completed",

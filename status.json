@@ -4,7 +4,7 @@
   "task": "รายละเอียดถูกซ่อนเพื่อความปลอดภัย",
   "activity": "CI มีรายการที่ต้องตรวจ",
   "next_step": "เปิด CI Monitor เพื่อตรวจสาเหตุ",
-  "updated_at": "2026-08-11T19:29:06Z",
+  "updated_at": "2026-08-11T19:29:27Z",
   "pr_url": "https://github.com/EliteBulls/AETERNUM/pull/125",
   "ci_url": "https://github.com/EliteBulls/AETERNUM/actions/runs/31528054709",
   "founder_action": "wait",

@@ -1,14 +1,16 @@
 {
   "status": "working",
   "phase": "Paper-only · Safe public snapshot",
-  "task": "Draft PR #101",
-  "activity": "feat(exec-team): add Founder Daily Briefing V1",
-  "next_step": "รอ Guardian ตรวจ CI และเตรียมขั้นถัดไป",
-  "updated_at": "2026-08-11T10:07:23Z",
-  "pr_url": "https://github.com/EliteBulls/AETERNUM/pull/101",
-  "ci_url": "https://github.com/EliteBulls/AETERNUM/actions/runs/31480722388",
+  "task": "รายละเอียดถูกซ่อนเพื่อความปลอดภัย",
+  "activity": "GitHub Actions กำลังทำงาน",
+  "next_step": "รอให้ระบบทำงานเสร็จ",
+  "updated_at": "2026-08-11T10:13:00Z",
+  "pr_url": "https://github.com/EliteBulls/AETERNUM/pull/110",
+  "ci_url": "https://github.com/EliteBulls/AETERNUM/actions/runs/31481214494",
   "founder_action": "wait",
   "live_steps": [
-    "รายละเอียดถูกซ่อนเพื่อความปลอดภัย: completed"
+    "รายละเอียดถูกซ่อนเพื่อความปลอดภัย: queued",
+    "รายละเอียดถูกซ่อนเพื่อความปลอดภัย: in_progress",
+    "Regression Tests: in_progress"
   ]
 }

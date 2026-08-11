@@ -1,15 +1,14 @@
 {
   "status": "working",
   "phase": "Paper-only · Safe public snapshot",
-  "task": "Draft PR #99",
-  "activity": "feat(workforce): add category-only sensitive-key classifier",
-  "next_step": "รอ Guardian ตรวจ CI และเตรียมขั้นถัดไป",
-  "updated_at": "2026-08-11T14:34:12Z",
+  "task": "Regression Tests",
+  "activity": "GitHub Actions กำลังทำงาน",
+  "next_step": "รอให้ระบบทำงานเสร็จ",
+  "updated_at": "2026-08-11T14:59:24Z",
   "pr_url": "https://github.com/EliteBulls/AETERNUM/pull/99",
-  "ci_url": "https://github.com/EliteBulls/AETERNUM/actions/runs/31502187014",
+  "ci_url": "https://github.com/EliteBulls/AETERNUM/actions/runs/31504542592",
   "founder_action": "wait",
   "live_steps": [
-    "รายละเอียดถูกซ่อนเพื่อความปลอดภัย: completed",
-    "CI Approval Notifier: completed"
+    "Regression Tests: queued"
   ]
 }

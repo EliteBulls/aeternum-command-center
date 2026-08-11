@@ -1,14 +1,14 @@
 {
   "status": "working",
   "phase": "Paper-only · Safe public snapshot",
-  "task": "รายละเอียดถูกซ่อนเพื่อความปลอดภัย",
-  "activity": "GitHub Actions กำลังทำงาน",
-  "next_step": "รอให้ระบบทำงานเสร็จ",
-  "updated_at": "2026-08-11T20:05:00Z",
+  "task": "Draft PR #125",
+  "activity": "docs(knowledge): learn from sensitive-key classifier V2",
+  "next_step": "รอ Guardian ตรวจ CI และเตรียมขั้นถัดไป",
+  "updated_at": "2026-08-11T20:05:13Z",
   "pr_url": "https://github.com/EliteBulls/AETERNUM/pull/125",
   "ci_url": "https://github.com/EliteBulls/AETERNUM/actions/runs/31531087395",
   "founder_action": "wait",
   "live_steps": [
-    "รายละเอียดถูกซ่อนเพื่อความปลอดภัย: in_progress"
+    "รายละเอียดถูกซ่อนเพื่อความปลอดภัย: completed"
   ]
 }

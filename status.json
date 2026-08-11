@@ -4,11 +4,12 @@
   "task": "Draft PR #101",
   "activity": "feat(exec-team): add Founder Daily Briefing V1",
   "next_step": "รอ Guardian ตรวจ CI และเตรียมขั้นถัดไป",
-  "updated_at": "2026-08-11T10:46:40Z",
+  "updated_at": "2026-08-11T10:52:49Z",
   "pr_url": "https://github.com/EliteBulls/AETERNUM/pull/101",
-  "ci_url": "https://github.com/EliteBulls/AETERNUM/actions/runs/31483658590",
+  "ci_url": "https://github.com/EliteBulls/AETERNUM/actions/runs/31484126938",
   "founder_action": "wait",
   "live_steps": [
-    "รายละเอียดถูกซ่อนเพื่อความปลอดภัย: completed"
+    "รายละเอียดถูกซ่อนเพื่อความปลอดภัย: completed",
+    "CI Approval Notifier: completed"
   ]
 }

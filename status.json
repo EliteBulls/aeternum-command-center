@@ -1,15 +1,17 @@
 {
-  "status": "block",
+  "status": "working",
   "phase": "Paper-only · Safe public snapshot",
   "task": "รายละเอียดถูกซ่อนเพื่อความปลอดภัย",
-  "activity": "CI มีรายการที่ต้องตรวจ",
-  "next_step": "เปิด CI Monitor เพื่อตรวจสาเหตุ",
-  "updated_at": "2026-08-11T19:29:27Z",
+  "activity": "GitHub Actions กำลังทำงาน",
+  "next_step": "รอให้ระบบทำงานเสร็จ",
+  "updated_at": "2026-08-11T19:33:30Z",
   "pr_url": "https://github.com/EliteBulls/AETERNUM/pull/125",
-  "ci_url": "https://github.com/EliteBulls/AETERNUM/actions/runs/31528054709",
+  "ci_url": "https://github.com/EliteBulls/AETERNUM/actions/runs/31528455438",
   "founder_action": "wait",
   "live_steps": [
-    "รายละเอียดถูกซ่อนเพื่อความปลอดภัย: completed",
-    "CI Approval Notifier: completed"
+    "รายละเอียดถูกซ่อนเพื่อความปลอดภัย: queued",
+    "CI Approval Notifier: queued",
+    "รายละเอียดถูกซ่อนเพื่อความปลอดภัย: queued",
+    "Regression Tests: queued"
   ]
 }

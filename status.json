@@ -1,12 +1,12 @@
 {
   "status": "working",
   "phase": "Paper-only · Safe public snapshot",
-  "task": "Draft PR #98",
-  "activity": "feat: add category-only sensitive key classifier S3",
+  "task": "Draft PR #105",
+  "activity": "fix(lisa): restore Operations Hub dashboard and supervisor report cycle",
   "next_step": "รอ Guardian ตรวจ CI และเตรียมขั้นถัดไป",
-  "updated_at": "2026-08-10T16:12:52Z",
-  "pr_url": "https://github.com/EliteBulls/AETERNUM/pull/98",
-  "ci_url": "https://github.com/EliteBulls/AETERNUM/actions/runs/31407706162",
+  "updated_at": "2026-08-11T06:25:32Z",
+  "pr_url": "https://github.com/EliteBulls/AETERNUM/pull/105",
+  "ci_url": "https://github.com/EliteBulls/AETERNUM/actions/runs/31465012679",
   "founder_action": "wait",
   "live_steps": [
     "รายละเอียดถูกซ่อนเพื่อความปลอดภัย: completed"

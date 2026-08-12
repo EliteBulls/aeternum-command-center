@@ -1,15 +1,14 @@
 {
   "status": "working",
   "phase": "Paper-only · Safe public snapshot",
-  "task": "Draft PR #134",
-  "activity": "feat: add Knowledge Learning duplicate preflight",
+  "task": "Draft PR #133",
+  "activity": "Add fail-closed Knowledge Learning duplicate preflight",
   "next_step": "รอ Guardian ตรวจ CI และเตรียมขั้นถัดไป",
-  "updated_at": "2026-08-12T04:20:38Z",
-  "pr_url": "https://github.com/EliteBulls/AETERNUM/pull/134",
-  "ci_url": "https://github.com/EliteBulls/AETERNUM/actions/runs/31562932387",
+  "updated_at": "2026-08-12T04:26:58Z",
+  "pr_url": "https://github.com/EliteBulls/AETERNUM/pull/133",
+  "ci_url": "https://github.com/EliteBulls/AETERNUM/actions/runs/31563177267",
   "founder_action": "wait",
   "live_steps": [
-    "รายละเอียดถูกซ่อนเพื่อความปลอดภัย: completed",
-    "CI Approval Notifier: completed"
+    "รายละเอียดถูกซ่อนเพื่อความปลอดภัย: completed"
   ]
 }

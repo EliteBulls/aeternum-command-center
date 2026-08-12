@@ -1,15 +1,14 @@
 {
   "status": "working",
   "phase": "Paper-only · Safe public snapshot",
-  "task": "Draft PR #139",
-  "activity": "P0 Lisa Command App V1 Shadow planning from one Founder chat",
+  "task": "Draft PR #144",
+  "activity": "P0 Lisa Command redesign canonical hard stops and deployable Founder auth",
   "next_step": "รอ Guardian ตรวจ CI และเตรียมขั้นถัดไป",
-  "updated_at": "2026-08-12T12:07:14Z",
-  "pr_url": "https://github.com/EliteBulls/AETERNUM/pull/139",
-  "ci_url": "https://github.com/EliteBulls/AETERNUM/actions/runs/31594900862",
+  "updated_at": "2026-08-12T12:53:55Z",
+  "pr_url": "https://github.com/EliteBulls/AETERNUM/pull/144",
+  "ci_url": "https://github.com/EliteBulls/AETERNUM/actions/runs/31598260565",
   "founder_action": "wait",
   "live_steps": [
-    "รายละเอียดถูกซ่อนเพื่อความปลอดภัย: completed",
-    "CI Approval Notifier: completed"
+    "รายละเอียดถูกซ่อนเพื่อความปลอดภัย: completed"
   ]
 }

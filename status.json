@@ -4,9 +4,9 @@
   "task": "Draft PR #131",
   "activity": "docs(knowledge): learn from PR #128 notification dedupe fix",
   "next_step": "รอ Guardian ตรวจ CI และเตรียมขั้นถัดไป",
-  "updated_at": "2026-08-12T03:26:37Z",
+  "updated_at": "2026-08-12T03:30:43Z",
   "pr_url": "https://github.com/EliteBulls/AETERNUM/pull/131",
-  "ci_url": "https://github.com/EliteBulls/AETERNUM/actions/runs/31560060283",
+  "ci_url": "https://github.com/EliteBulls/AETERNUM/actions/runs/31560275892",
   "founder_action": "wait",
   "live_steps": [
     "รายละเอียดถูกซ่อนเพื่อความปลอดภัย: completed",

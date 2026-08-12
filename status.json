@@ -4,11 +4,12 @@
   "task": "Draft PR #136",
   "activity": "Add atomic Knowledge Learning reservation boundary",
   "next_step": "รอ Guardian ตรวจ CI และเตรียมขั้นถัดไป",
-  "updated_at": "2026-08-12T06:27:03Z",
+  "updated_at": "2026-08-12T06:30:16Z",
   "pr_url": "https://github.com/EliteBulls/AETERNUM/pull/136",
-  "ci_url": "https://github.com/EliteBulls/AETERNUM/actions/runs/31569704408",
+  "ci_url": "https://github.com/EliteBulls/AETERNUM/actions/runs/31570205325",
   "founder_action": "wait",
   "live_steps": [
-    "รายละเอียดถูกซ่อนเพื่อความปลอดภัย: completed"
+    "รายละเอียดถูกซ่อนเพื่อความปลอดภัย: completed",
+    "CI Approval Notifier: completed"
   ]
 }

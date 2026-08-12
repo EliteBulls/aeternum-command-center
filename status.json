@@ -1,14 +1,14 @@
 {
   "status": "working",
   "phase": "Paper-only · Safe public snapshot",
-  "task": "Draft PR #128",
-  "activity": "Fix scanner-safe internal notification dedupe keys",
-  "next_step": "รอ Guardian ตรวจ CI และเตรียมขั้นถัดไป",
-  "updated_at": "2026-08-12T02:05:22Z",
+  "task": "Regression Tests",
+  "activity": "GitHub Actions กำลังทำงาน",
+  "next_step": "รอให้ระบบทำงานเสร็จ",
+  "updated_at": "2026-08-12T02:12:35Z",
   "pr_url": "https://github.com/EliteBulls/AETERNUM/pull/128",
-  "ci_url": "https://github.com/EliteBulls/AETERNUM/actions/runs/31555709273",
+  "ci_url": "https://github.com/EliteBulls/AETERNUM/actions/runs/31556125092",
   "founder_action": "wait",
   "live_steps": [
-    "รายละเอียดถูกซ่อนเพื่อความปลอดภัย: completed"
+    "Regression Tests: queued"
   ]
 }

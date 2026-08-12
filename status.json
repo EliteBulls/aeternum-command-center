@@ -1,14 +1,14 @@
 {
   "status": "working",
   "phase": "Paper-only · Safe public snapshot",
-  "task": "Regression Tests",
-  "activity": "GitHub Actions กำลังทำงาน",
-  "next_step": "รอให้ระบบทำงานเสร็จ",
-  "updated_at": "2026-08-12T09:22:49Z",
+  "task": "Draft PR #136",
+  "activity": "Add atomic Knowledge Learning reservation boundary",
+  "next_step": "รอ Guardian ตรวจ CI และเตรียมขั้นถัดไป",
+  "updated_at": "2026-08-12T09:23:03Z",
   "pr_url": "https://github.com/EliteBulls/AETERNUM/pull/136",
-  "ci_url": "https://github.com/EliteBulls/AETERNUM/actions/runs/31582594010",
+  "ci_url": "https://github.com/EliteBulls/AETERNUM/actions/runs/31582608955",
   "founder_action": "wait",
   "live_steps": [
-    "Regression Tests: in_progress"
+    "รายละเอียดถูกซ่อนเพื่อความปลอดภัย: completed"
   ]
 }

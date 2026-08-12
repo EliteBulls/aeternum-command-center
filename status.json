@@ -4,12 +4,12 @@
   "task": "Draft PR #133",
   "activity": "Add fail-closed Knowledge Learning duplicate preflight",
   "next_step": "รอ Guardian ตรวจ CI และเตรียมขั้นถัดไป",
-  "updated_at": "2026-08-12T05:02:54Z",
+  "updated_at": "2026-08-12T05:09:57Z",
   "pr_url": "https://github.com/EliteBulls/AETERNUM/pull/133",
-  "ci_url": "https://github.com/EliteBulls/AETERNUM/actions/runs/31565221107",
+  "ci_url": "https://github.com/EliteBulls/AETERNUM/actions/runs/31565611661",
   "founder_action": "wait",
   "live_steps": [
     "รายละเอียดถูกซ่อนเพื่อความปลอดภัย: completed",
-    "Task Completion Notifier: completed"
+    "CI Approval Notifier: completed"
   ]
 }

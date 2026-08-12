@@ -4,7 +4,7 @@
   "task": "Draft PR #128",
   "activity": "Fix scanner-safe internal notification dedupe keys",
   "next_step": "รอ Guardian ตรวจ CI และเตรียมขั้นถัดไป",
-  "updated_at": "2026-08-12T02:05:10Z",
+  "updated_at": "2026-08-12T02:05:22Z",
   "pr_url": "https://github.com/EliteBulls/AETERNUM/pull/128",
   "ci_url": "https://github.com/EliteBulls/AETERNUM/actions/runs/31555709273",
   "founder_action": "wait",

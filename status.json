@@ -1,15 +1,14 @@
 {
   "status": "working",
   "phase": "Paper-only · Safe public snapshot",
-  "task": "Draft PR #131",
-  "activity": "docs(knowledge): learn from PR #128 notification dedupe fix",
+  "task": "Draft PR #130",
+  "activity": "docs(knowledge): learn from notification dedupe hardening",
   "next_step": "รอ Guardian ตรวจ CI และเตรียมขั้นถัดไป",
-  "updated_at": "2026-08-12T03:30:43Z",
-  "pr_url": "https://github.com/EliteBulls/AETERNUM/pull/131",
-  "ci_url": "https://github.com/EliteBulls/AETERNUM/actions/runs/31560275892",
+  "updated_at": "2026-08-12T03:49:18Z",
+  "pr_url": "https://github.com/EliteBulls/AETERNUM/pull/130",
+  "ci_url": "https://github.com/EliteBulls/AETERNUM/actions/runs/31561004301",
   "founder_action": "wait",
   "live_steps": [
-    "รายละเอียดถูกซ่อนเพื่อความปลอดภัย: completed",
-    "CI Approval Notifier: completed"
+    "รายละเอียดถูกซ่อนเพื่อความปลอดภัย: completed"
   ]
 }

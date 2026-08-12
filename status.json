@@ -1,16 +1,15 @@
 {
   "status": "working",
   "phase": "Paper-only · Safe public snapshot",
-  "task": "รายละเอียดถูกซ่อนเพื่อความปลอดภัย",
-  "activity": "GitHub Actions กำลังทำงาน",
-  "next_step": "รอให้ระบบทำงานเสร็จ",
-  "updated_at": "2026-08-12T13:14:16Z",
+  "task": "Draft PR #144",
+  "activity": "P0 Lisa Command redesign canonical hard stops and deployable Founder auth",
+  "next_step": "รอ Guardian ตรวจ CI และเตรียมขั้นถัดไป",
+  "updated_at": "2026-08-12T13:14:41Z",
   "pr_url": "https://github.com/EliteBulls/AETERNUM/pull/144",
-  "ci_url": "https://github.com/EliteBulls/AETERNUM/actions/runs/31600388934",
+  "ci_url": "https://github.com/EliteBulls/AETERNUM/actions/runs/31600395936",
   "founder_action": "wait",
   "live_steps": [
-    "รายละเอียดถูกซ่อนเพื่อความปลอดภัย: queued",
-    "CI Approval Notifier: in_progress",
-    "Regression Tests: queued"
+    "รายละเอียดถูกซ่อนเพื่อความปลอดภัย: completed",
+    "CI Approval Notifier: completed"
   ]
 }

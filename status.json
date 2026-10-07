@@ -1,14 +1,122 @@
 {
   "status": "working",
   "phase": "Paper-only · Safe public snapshot",
-  "task": "Draft PR #150",
-  "activity": "P0 Lisa Command atomic whole-command safety boundary",
+  "task": "Draft PR #261",
+  "activity": "SHADOW: prove frontier-first autonomy integration across restart",
   "next_step": "รอ Guardian ตรวจ CI และเตรียมขั้นถัดไป",
-  "updated_at": "2026-08-12T18:18:54Z",
-  "pr_url": "https://github.com/EliteBulls/AETERNUM/pull/150",
-  "ci_url": "https://github.com/EliteBulls/AETERNUM/actions/runs/31626957277",
+  "updated_at": "2026-10-07T17:53:22Z",
+  "pr_url": "https://github.com/EliteBulls/AETERNUM/pull/261",
+  "ci_url": "https://github.com/EliteBulls/AETERNUM/actions/runs/37630403816",
   "founder_action": "wait",
   "live_steps": [
-    "รายละเอียดถูกซ่อนเพื่อความปลอดภัย: completed"
-  ]
+    "Regression Tests: completed"
+  ],
+  "engineer_monitor": {
+    "progress_percent": 65,
+    "progress_basis": "weighted_verified_gate_ledger_v1",
+    "gates": [
+      {
+        "key": "scope_pins_integration",
+        "label": "Scope / pins / integration",
+        "weight": 10,
+        "status": "PENDING",
+        "evidence": null
+      },
+      {
+        "key": "focused_tests",
+        "label": "Focused tests",
+        "weight": 10,
+        "status": "PENDING",
+        "evidence": null
+      },
+      {
+        "key": "related_tests",
+        "label": "Related tests",
+        "weight": 10,
+        "status": "PENDING",
+        "evidence": null
+      },
+      {
+        "key": "full_regression",
+        "label": "Full regression",
+        "weight": 20,
+        "status": "PASS",
+        "evidence": {
+          "source": "github_actions_steps",
+          "url": "https://github.com/EliteBulls/AETERNUM/actions/runs/37630403816",
+          "timestamp": "2026-10-07T14:17:45Z",
+          "head_sha": "6c19dc018934bd28a6c33f4fe7b13e938030c757"
+        }
+      },
+      {
+        "key": "static_safety",
+        "label": "Static / safety validation",
+        "weight": 15,
+        "status": "PASS",
+        "evidence": {
+          "source": "github_actions_jobs",
+          "url": "https://github.com/EliteBulls/AETERNUM/actions/runs/37630403816",
+          "timestamp": "2026-10-07T14:03:47Z",
+          "head_sha": "6c19dc018934bd28a6c33f4fe7b13e938030c757"
+        }
+      },
+      {
+        "key": "exact_head_ci",
+        "label": "Exact-head CI",
+        "weight": 20,
+        "status": "PASS",
+        "evidence": {
+          "source": "github_actions_run",
+          "url": "https://github.com/EliteBulls/AETERNUM/actions/runs/37630403816",
+          "timestamp": "2026-10-07T14:17:56Z",
+          "head_sha": "6c19dc018934bd28a6c33f4fe7b13e938030c757"
+        }
+      },
+      {
+        "key": "fresh_context_review",
+        "label": "Fresh-context review",
+        "weight": 10,
+        "status": "PASS",
+        "evidence": {
+          "source": "github_pull_review",
+          "url": "https://github.com/EliteBulls/AETERNUM/pull/261",
+          "timestamp": "2026-10-07T14:37:41Z",
+          "head_sha": "6c19dc018934bd28a6c33f4fe7b13e938030c757",
+          "reviewer": "elitebulls",
+          "author_association": "OWNER",
+          "reviewer_account_distinct_from_pr_author": false
+        }
+      },
+      {
+        "key": "verified_draft",
+        "label": "VERIFIED Draft",
+        "weight": 5,
+        "status": "PENDING",
+        "evidence": null
+      }
+    ],
+    "pass_gates": [
+      "Full regression",
+      "Static / safety validation",
+      "Exact-head CI",
+      "Fresh-context review"
+    ],
+    "now": "Waiting for Scope / pins / integration evidence",
+    "block": "",
+    "next": "Scope / pins / integration",
+    "eta": null,
+    "agent": "Guardian",
+    "exact_head": "6c19dc018934bd28a6c33f4fe7b13e938030c757",
+    "pr_number": 261,
+    "pr_url": "https://github.com/EliteBulls/AETERNUM/pull/261",
+    "ci_url": "https://github.com/EliteBulls/AETERNUM/actions/runs/37630403816",
+    "founder_action": "NONE",
+    "source_state": "LIVE",
+    "observed_at": "2026-10-07T17:53:22.688632Z",
+    "last_update": "2026-10-07T14:37:41Z",
+    "stale_after_seconds": 30,
+    "read_only": true,
+    "paper_only": true,
+    "real_worker_enabled": false
+  }
 }

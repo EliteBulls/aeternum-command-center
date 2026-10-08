@@ -4,9 +4,9 @@
   "task": "Regression Tests",
   "activity": "CI มีรายการที่ต้องตรวจ",
   "next_step": "เปิด CI Monitor เพื่อตรวจสาเหตุ",
-  "updated_at": "2026-10-08T11:18:46Z",
-  "pr_url": "https://github.com/EliteBulls/AETERNUM/pull/261",
-  "ci_url": "https://github.com/EliteBulls/AETERNUM/actions/runs/37767268161",
+  "updated_at": "2026-10-08T11:40:04Z",
+  "pr_url": "https://github.com/EliteBulls/AETERNUM/pull/267",
+  "ci_url": "https://github.com/EliteBulls/AETERNUM/actions/runs/37765521677",
   "founder_action": "wait",
   "live_steps": [
     "Regression Tests: completed"
@@ -22,9 +22,9 @@
         "status": "PASS",
         "evidence": {
           "source": "github_actions_steps",
-          "url": "https://github.com/EliteBulls/AETERNUM/actions/runs/37767268161",
-          "timestamp": "2026-10-08T11:03:32Z",
-          "head_sha": "60f33b77d60270eab808ee32107cfeae53630672"
+          "url": "https://github.com/EliteBulls/AETERNUM/actions/runs/37765521677",
+          "timestamp": "2026-10-08T11:00:59Z",
+          "head_sha": "227b7b2064e686e43ea8fd564e5d5e087bb31d4f"
         }
       },
       {
@@ -34,9 +34,9 @@
         "status": "PASS",
         "evidence": {
           "source": "github_actions_steps",
-          "url": "https://github.com/EliteBulls/AETERNUM/actions/runs/37767268161",
-          "timestamp": "2026-10-08T11:03:33Z",
-          "head_sha": "60f33b77d60270eab808ee32107cfeae53630672"
+          "url": "https://github.com/EliteBulls/AETERNUM/actions/runs/37765521677",
+          "timestamp": "2026-10-08T11:00:59Z",
+          "head_sha": "227b7b2064e686e43ea8fd564e5d5e087bb31d4f"
         }
       },
       {
@@ -60,9 +60,9 @@
         "status": "PASS",
         "evidence": {
           "source": "github_actions_jobs",
-          "url": "https://github.com/EliteBulls/AETERNUM/actions/runs/37767268161",
-          "timestamp": "2026-10-08T11:17:20Z",
-          "head_sha": "60f33b77d60270eab808ee32107cfeae53630672"
+          "url": "https://github.com/EliteBulls/AETERNUM/actions/runs/37765521677",
+          "timestamp": "2026-10-08T11:02:32Z",
+          "head_sha": "227b7b2064e686e43ea8fd564e5d5e087bb31d4f"
         }
       },
       {
@@ -97,14 +97,14 @@
     "next": "Related tests",
     "eta": null,
     "agent": "Guardian",
-    "exact_head": "60f33b77d60270eab808ee32107cfeae53630672",
-    "pr_number": 261,
-    "pr_url": "https://github.com/EliteBulls/AETERNUM/pull/261",
-    "ci_url": "https://github.com/EliteBulls/AETERNUM/actions/runs/37767268161",
+    "exact_head": "227b7b2064e686e43ea8fd564e5d5e087bb31d4f",
+    "pr_number": 267,
+    "pr_url": "https://github.com/EliteBulls/AETERNUM/pull/267",
+    "ci_url": "https://github.com/EliteBulls/AETERNUM/actions/runs/37765521677",
     "founder_action": "NONE",
     "source_state": "LIVE",
-    "observed_at": "2026-10-08T11:18:46.190702Z",
-    "last_update": "2026-10-08T11:17:20Z",
+    "observed_at": "2026-10-08T11:40:04.196547Z",
+    "last_update": "2026-10-08T11:02:32Z",
     "stale_after_seconds": 30,
     "read_only": true,
     "paper_only": true,

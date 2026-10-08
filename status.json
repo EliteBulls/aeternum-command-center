@@ -1,18 +1,19 @@
 {
-  "status": "working",
+  "status": "done",
   "phase": "Paper-only · Safe public snapshot",
-  "task": "Draft PR #263",
+  "task": "PR #263 merged",
   "activity": "Fix Live Monitor latest-work selection",
-  "next_step": "รอ Guardian ตรวจ CI และเตรียมขั้นถัดไป",
-  "updated_at": "2026-10-08T09:17:20Z",
+  "next_step": "งานนี้เสร็จแล้ว — เลือกงานถัดไป",
+  "updated_at": "2026-10-08T10:37:49Z",
   "pr_url": "https://github.com/EliteBulls/AETERNUM/pull/263",
   "ci_url": "https://github.com/EliteBulls/AETERNUM/actions/runs/37747018084",
-  "founder_action": "wait",
+  "founder_action": "next",
   "live_steps": [
+    "Task Completion Notifier: completed",
     "Regression Tests: completed"
   ],
   "engineer_monitor": {
-    "progress_percent": 100,
+    "progress_percent": 95,
     "progress_basis": "weighted_verified_gate_ledger_v1",
     "gates": [
       {
@@ -106,13 +107,8 @@
         "key": "verified_draft",
         "label": "VERIFIED Draft",
         "weight": 5,
-        "status": "PASS",
-        "evidence": {
-          "source": "github_pr_draft_state",
-          "url": "https://github.com/EliteBulls/AETERNUM/pull/263",
-          "timestamp": "2026-10-08T09:16:23Z",
-          "head_sha": "1188d02b1d5fd0f6d7afa0c94deb5b7c6052b71f"
-        }
+        "status": "FAILED",
+        "evidence": null
       }
     ],
     "pass_gates": [
@@ -122,21 +118,20 @@
       "Full regression",
       "Static / safety validation",
       "Exact-head CI",
-      "Fresh-context review",
-      "VERIFIED Draft"
+      "Fresh-context review"
     ],
-    "now": "VERIFIED Draft evidence complete",
-    "block": "",
-    "next": "Founder review; Ready / merge / deploy require separate approval",
+    "now": "Waiting for VERIFIED Draft evidence",
+    "block": "VERIFIED Draft: FAILED",
+    "next": "VERIFIED Draft",
     "eta": null,
     "agent": "Guardian",
     "exact_head": "1188d02b1d5fd0f6d7afa0c94deb5b7c6052b71f",
     "pr_number": 263,
     "pr_url": "https://github.com/EliteBulls/AETERNUM/pull/263",
     "ci_url": "https://github.com/EliteBulls/AETERNUM/actions/runs/37747018084",
-    "founder_action": "APPROVAL REQUIRED",
+    "founder_action": "NONE",
     "source_state": "LIVE",
-    "observed_at": "2026-10-08T09:17:20.776703Z",
+    "observed_at": "2026-10-08T10:37:49.271658Z",
     "last_update": "2026-10-08T09:16:23Z",
     "stale_after_seconds": 30,
     "read_only": true,

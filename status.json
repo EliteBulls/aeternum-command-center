@@ -1,15 +1,15 @@
 {
   "status": "working",
   "phase": "Paper-only · Safe public snapshot",
-  "task": "Draft PR #263",
-  "activity": "Fix Live Monitor latest-work selection",
-  "next_step": "รอ Guardian ตรวจ CI และเตรียมขั้นถัดไป",
-  "updated_at": "2026-10-08T08:12:38Z",
+  "task": "Regression Tests",
+  "activity": "GitHub Actions กำลังทำงาน",
+  "next_step": "รอให้ระบบทำงานเสร็จ",
+  "updated_at": "2026-10-08T08:21:49Z",
   "pr_url": "https://github.com/EliteBulls/AETERNUM/pull/263",
   "ci_url": "https://github.com/EliteBulls/AETERNUM/actions/runs/37747018084",
   "founder_action": "wait",
   "live_steps": [
-    "Regression Tests: completed"
+    "Regression Tests: queued"
   ],
   "engineer_monitor": {
     "progress_percent": 0,
@@ -47,14 +47,14 @@
         "key": "static_safety",
         "label": "Static / safety validation",
         "weight": 15,
-        "status": "FAILED",
+        "status": "PENDING",
         "evidence": null
       },
       {
         "key": "exact_head_ci",
         "label": "Exact-head CI",
         "weight": 20,
-        "status": "FAILED",
+        "status": "PENDING",
         "evidence": null
       },
       {
@@ -73,18 +73,18 @@
       }
     ],
     "pass_gates": [],
-    "now": "Waiting for Scope / pins / integration evidence",
-    "block": "Static / safety validation: FAILED",
+    "now": "Exact-head CI is running",
+    "block": "",
     "next": "Scope / pins / integration",
     "eta": null,
-    "agent": "Guardian",
+    "agent": "GitHub Actions",
     "exact_head": "1188d02b1d5fd0f6d7afa0c94deb5b7c6052b71f",
     "pr_number": 263,
     "pr_url": "https://github.com/EliteBulls/AETERNUM/pull/263",
     "ci_url": "https://github.com/EliteBulls/AETERNUM/actions/runs/37747018084",
     "founder_action": "NONE",
     "source_state": "LIVE",
-    "observed_at": "2026-10-08T08:12:38.544429Z",
+    "observed_at": "2026-10-08T08:21:49.608550Z",
     "last_update": null,
     "stale_after_seconds": 30,
     "read_only": true,

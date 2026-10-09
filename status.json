@@ -1,15 +1,14 @@
 {
-  "status": "done",
+  "status": "working",
   "phase": "Paper-only · Safe public snapshot",
-  "task": "PR #272 merged",
-  "activity": "feat(investment): Smith Trader v2 Slice A pure strategy validator",
-  "next_step": "งานนี้เสร็จแล้ว — เลือกงานถัดไป",
-  "updated_at": "2026-10-09T04:54:10Z",
-  "pr_url": "https://github.com/EliteBulls/AETERNUM/pull/272",
-  "ci_url": "https://github.com/EliteBulls/AETERNUM/actions/runs/37881345046",
-  "founder_action": "next",
+  "task": "Draft PR #261",
+  "activity": "SHADOW: prove frontier-first autonomy integration across restart",
+  "next_step": "รอ Guardian ตรวจ CI และเตรียมขั้นถัดไป",
+  "updated_at": "2026-10-09T06:45:22Z",
+  "pr_url": "https://github.com/EliteBulls/AETERNUM/pull/261",
+  "ci_url": "https://github.com/EliteBulls/AETERNUM/actions/runs/37893698335",
+  "founder_action": "wait",
   "live_steps": [
-    "Task Completion Notifier: completed",
     "Regression Tests: completed"
   ],
   "engineer_monitor": {
@@ -23,9 +22,9 @@
         "status": "PASS",
         "evidence": {
           "source": "github_actions_steps",
-          "url": "https://github.com/EliteBulls/AETERNUM/actions/runs/37881345046",
-          "timestamp": "2026-10-09T04:12:58Z",
-          "head_sha": "25cec79f1056672a0f262f3ffcec84e5e257ccc9"
+          "url": "https://github.com/EliteBulls/AETERNUM/actions/runs/37893698335",
+          "timestamp": "2026-10-09T06:41:39Z",
+          "head_sha": "8eb559e0f4ae73af1b01bf5b6be6f378dcd42a96"
         }
       },
       {
@@ -35,9 +34,9 @@
         "status": "PASS",
         "evidence": {
           "source": "github_actions_steps",
-          "url": "https://github.com/EliteBulls/AETERNUM/actions/runs/37881345046",
-          "timestamp": "2026-10-09T04:12:59Z",
-          "head_sha": "25cec79f1056672a0f262f3ffcec84e5e257ccc9"
+          "url": "https://github.com/EliteBulls/AETERNUM/actions/runs/37893698335",
+          "timestamp": "2026-10-09T06:41:40Z",
+          "head_sha": "8eb559e0f4ae73af1b01bf5b6be6f378dcd42a96"
         }
       },
       {
@@ -47,9 +46,9 @@
         "status": "PASS",
         "evidence": {
           "source": "github_actions_steps",
-          "url": "https://github.com/EliteBulls/AETERNUM/actions/runs/37881345046",
-          "timestamp": "2026-10-09T04:13:01Z",
-          "head_sha": "25cec79f1056672a0f262f3ffcec84e5e257ccc9"
+          "url": "https://github.com/EliteBulls/AETERNUM/actions/runs/37893698335",
+          "timestamp": "2026-10-09T06:41:41Z",
+          "head_sha": "8eb559e0f4ae73af1b01bf5b6be6f378dcd42a96"
         }
       },
       {
@@ -59,9 +58,9 @@
         "status": "PASS",
         "evidence": {
           "source": "github_actions_steps",
-          "url": "https://github.com/EliteBulls/AETERNUM/actions/runs/37881345046",
-          "timestamp": "2026-10-09T04:16:30Z",
-          "head_sha": "25cec79f1056672a0f262f3ffcec84e5e257ccc9"
+          "url": "https://github.com/EliteBulls/AETERNUM/actions/runs/37893698335",
+          "timestamp": "2026-10-09T06:44:55Z",
+          "head_sha": "8eb559e0f4ae73af1b01bf5b6be6f378dcd42a96"
         }
       },
       {
@@ -71,9 +70,9 @@
         "status": "PASS",
         "evidence": {
           "source": "github_actions_jobs",
-          "url": "https://github.com/EliteBulls/AETERNUM/actions/runs/37881345046",
-          "timestamp": "2026-10-09T04:19:23Z",
-          "head_sha": "25cec79f1056672a0f262f3ffcec84e5e257ccc9"
+          "url": "https://github.com/EliteBulls/AETERNUM/actions/runs/37893698335",
+          "timestamp": "2026-10-09T06:31:34Z",
+          "head_sha": "8eb559e0f4ae73af1b01bf5b6be6f378dcd42a96"
         }
       },
       {
@@ -83,9 +82,9 @@
         "status": "PASS",
         "evidence": {
           "source": "github_actions_run",
-          "url": "https://github.com/EliteBulls/AETERNUM/actions/runs/37881345046",
-          "timestamp": "2026-10-09T04:19:24Z",
-          "head_sha": "25cec79f1056672a0f262f3ffcec84e5e257ccc9"
+          "url": "https://github.com/EliteBulls/AETERNUM/actions/runs/37893698335",
+          "timestamp": "2026-10-09T06:45:05Z",
+          "head_sha": "8eb559e0f4ae73af1b01bf5b6be6f378dcd42a96"
         }
       },
       {
@@ -116,14 +115,14 @@
     "next": "Fresh-context review",
     "eta": null,
     "agent": "Reviewer",
-    "exact_head": "25cec79f1056672a0f262f3ffcec84e5e257ccc9",
-    "pr_number": 272,
-    "pr_url": "https://github.com/EliteBulls/AETERNUM/pull/272",
-    "ci_url": "https://github.com/EliteBulls/AETERNUM/actions/runs/37881345046",
+    "exact_head": "8eb559e0f4ae73af1b01bf5b6be6f378dcd42a96",
+    "pr_number": 261,
+    "pr_url": "https://github.com/EliteBulls/AETERNUM/pull/261",
+    "ci_url": "https://github.com/EliteBulls/AETERNUM/actions/runs/37893698335",
     "founder_action": "NONE",
     "source_state": "LIVE",
-    "observed_at": "2026-10-09T04:54:10.917595Z",
-    "last_update": "2026-10-09T04:19:24Z",
+    "observed_at": "2026-10-09T06:45:22.978254Z",
+    "last_update": "2026-10-09T06:45:05Z",
     "stale_after_seconds": 30,
     "read_only": true,
     "paper_only": true,

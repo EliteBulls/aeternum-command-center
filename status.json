@@ -1,91 +1,61 @@
 {
   "status": "working",
   "phase": "Paper-only · Safe public snapshot",
-  "task": "Draft PR #261",
-  "activity": "SHADOW: prove frontier-first autonomy integration across restart",
-  "next_step": "รอ Guardian ตรวจ CI และเตรียมขั้นถัดไป",
-  "updated_at": "2026-10-09T06:45:22Z",
-  "pr_url": "https://github.com/EliteBulls/AETERNUM/pull/261",
-  "ci_url": "https://github.com/EliteBulls/AETERNUM/actions/runs/37893698335",
+  "task": "Regression Tests",
+  "activity": "GitHub Actions กำลังทำงาน",
+  "next_step": "รอให้ระบบทำงานเสร็จ",
+  "updated_at": "2026-10-09T08:02:42Z",
+  "pr_url": "https://github.com/EliteBulls/AETERNUM/pull/273",
+  "ci_url": "https://github.com/EliteBulls/AETERNUM/actions/runs/37899523479",
   "founder_action": "wait",
   "live_steps": [
-    "Regression Tests: completed"
+    "Regression Tests: queued"
   ],
   "engineer_monitor": {
-    "progress_percent": 85,
+    "progress_percent": 0,
     "progress_basis": "weighted_verified_gate_ledger_v1",
     "gates": [
       {
         "key": "scope_pins_integration",
         "label": "Scope / pins / integration",
         "weight": 10,
-        "status": "PASS",
-        "evidence": {
-          "source": "github_actions_steps",
-          "url": "https://github.com/EliteBulls/AETERNUM/actions/runs/37893698335",
-          "timestamp": "2026-10-09T06:41:39Z",
-          "head_sha": "8eb559e0f4ae73af1b01bf5b6be6f378dcd42a96"
-        }
+        "status": "PENDING",
+        "evidence": null
       },
       {
         "key": "focused_tests",
         "label": "Focused tests",
         "weight": 10,
-        "status": "PASS",
-        "evidence": {
-          "source": "github_actions_steps",
-          "url": "https://github.com/EliteBulls/AETERNUM/actions/runs/37893698335",
-          "timestamp": "2026-10-09T06:41:40Z",
-          "head_sha": "8eb559e0f4ae73af1b01bf5b6be6f378dcd42a96"
-        }
+        "status": "PENDING",
+        "evidence": null
       },
       {
         "key": "related_tests",
         "label": "Related tests",
         "weight": 10,
-        "status": "PASS",
-        "evidence": {
-          "source": "github_actions_steps",
-          "url": "https://github.com/EliteBulls/AETERNUM/actions/runs/37893698335",
-          "timestamp": "2026-10-09T06:41:41Z",
-          "head_sha": "8eb559e0f4ae73af1b01bf5b6be6f378dcd42a96"
-        }
+        "status": "PENDING",
+        "evidence": null
       },
       {
         "key": "full_regression",
         "label": "Full regression",
         "weight": 20,
-        "status": "PASS",
-        "evidence": {
-          "source": "github_actions_steps",
-          "url": "https://github.com/EliteBulls/AETERNUM/actions/runs/37893698335",
-          "timestamp": "2026-10-09T06:44:55Z",
-          "head_sha": "8eb559e0f4ae73af1b01bf5b6be6f378dcd42a96"
-        }
+        "status": "PENDING",
+        "evidence": null
       },
       {
         "key": "static_safety",
         "label": "Static / safety validation",
         "weight": 15,
-        "status": "PASS",
-        "evidence": {
-          "source": "github_actions_jobs",
-          "url": "https://github.com/EliteBulls/AETERNUM/actions/runs/37893698335",
-          "timestamp": "2026-10-09T06:31:34Z",
-          "head_sha": "8eb559e0f4ae73af1b01bf5b6be6f378dcd42a96"
-        }
+        "status": "PENDING",
+        "evidence": null
       },
       {
         "key": "exact_head_ci",
         "label": "Exact-head CI",
         "weight": 20,
-        "status": "PASS",
-        "evidence": {
-          "source": "github_actions_run",
-          "url": "https://github.com/EliteBulls/AETERNUM/actions/runs/37893698335",
-          "timestamp": "2026-10-09T06:45:05Z",
-          "head_sha": "8eb559e0f4ae73af1b01bf5b6be6f378dcd42a96"
-        }
+        "status": "PENDING",
+        "evidence": null
       },
       {
         "key": "fresh_context_review",
@@ -102,27 +72,20 @@
         "evidence": null
       }
     ],
-    "pass_gates": [
-      "Scope / pins / integration",
-      "Focused tests",
-      "Related tests",
-      "Full regression",
-      "Static / safety validation",
-      "Exact-head CI"
-    ],
-    "now": "Waiting for fresh-context review",
+    "pass_gates": [],
+    "now": "Exact-head CI is running",
     "block": "",
-    "next": "Fresh-context review",
+    "next": "Scope / pins / integration",
     "eta": null,
-    "agent": "Reviewer",
-    "exact_head": "8eb559e0f4ae73af1b01bf5b6be6f378dcd42a96",
-    "pr_number": 261,
-    "pr_url": "https://github.com/EliteBulls/AETERNUM/pull/261",
-    "ci_url": "https://github.com/EliteBulls/AETERNUM/actions/runs/37893698335",
+    "agent": "GitHub Actions",
+    "exact_head": "32f2f5d0c8f0f4d17953195d623fd6e71ac27e87",
+    "pr_number": 273,
+    "pr_url": "https://github.com/EliteBulls/AETERNUM/pull/273",
+    "ci_url": "https://github.com/EliteBulls/AETERNUM/actions/runs/37899523479",
     "founder_action": "NONE",
     "source_state": "LIVE",
-    "observed_at": "2026-10-09T06:45:22.978254Z",
-    "last_update": "2026-10-09T06:45:05Z",
+    "observed_at": "2026-10-09T08:02:42.430546Z",
+    "last_update": null,
     "stale_after_seconds": 30,
     "read_only": true,
     "paper_only": true,

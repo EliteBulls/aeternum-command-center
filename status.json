@@ -1,15 +1,16 @@
 {
-  "status": "working",
+  "status": "done",
   "phase": "Paper-only · Safe public snapshot",
-  "task": "Task Completion Notifier",
-  "activity": "GitHub Actions กำลังทำงาน",
-  "next_step": "รอให้ระบบทำงานเสร็จ",
-  "updated_at": "2026-10-12T16:30:35Z",
+  "task": "PR #277 merged",
+  "activity": "SHADOW: add Founder Attention mission router (#237)",
+  "next_step": "งานนี้เสร็จแล้ว — เลือกงานถัดไป",
+  "updated_at": "2026-10-12T16:37:07Z",
   "pr_url": "https://github.com/EliteBulls/AETERNUM/pull/277",
   "ci_url": "https://github.com/EliteBulls/AETERNUM/actions/runs/38248440529",
-  "founder_action": "wait",
+  "founder_action": "next",
   "live_steps": [
-    "Task Completion Notifier: queued"
+    "Task Completion Notifier: completed",
+    "Regression Tests: completed"
   ],
   "engineer_monitor": {
     "progress_percent": 85,
@@ -121,7 +122,7 @@
     "ci_url": "https://github.com/EliteBulls/AETERNUM/actions/runs/38248440529",
     "founder_action": "NONE",
     "source_state": "LIVE",
-    "observed_at": "2026-10-12T16:30:35.449373Z",
+    "observed_at": "2026-10-12T16:37:07.305163Z",
     "last_update": "2026-10-12T13:18:33Z",
     "stale_after_seconds": 30,
     "read_only": true,
